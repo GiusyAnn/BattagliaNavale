@@ -70,11 +70,7 @@ public class PlayerManagerP2 : MonoBehaviourPun//, IPunObservable
                 casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CasellaP2"),
                     new Vector3(700 + (x * 100), 1, -700 + (y * 100)), Quaternion.identity, 0);
 
-                casellaPlayer.GetComponent<Casella>().SetRiga(x);
-                casellaPlayer.GetComponent<Casella>().SetColonna(y);
-
-                casellaPlayer.GetComponent<Casella>().SetTable(1);
-                casellaPlayer.GetComponent<Casella>().SetPlayerTable(2);
+                    setCasella(casellaPlayer, x, y, 1);
 
                 }
         }
@@ -91,17 +87,23 @@ public class PlayerManagerP2 : MonoBehaviourPun//, IPunObservable
                 casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CasellaP2"),
                     new Vector3(700 + (x * 100), 1, 100 + (y * 100)), Quaternion.identity, 0);
 
-                casellaPlayer.GetComponent<Casella>().SetRiga(x);
-                casellaPlayer.GetComponent<Casella>().SetColonna(y);
-                casellaPlayer.GetComponent<Casella>().SetTable(2);
-                casellaPlayer.GetComponent<Casella>().SetPlayerTable(2);
-                
-            }
+                    setCasella(casellaPlayer, x, y, 2);
+
+                }
         }
     }
 
        #endregion
 
+    }
+
+    public void setCasella(GameObject casellaPlayer, int x, int y, int numtable)
+    {
+        casellaPlayer.GetComponent<Casella>().SetRiga(x);
+        casellaPlayer.GetComponent<Casella>().SetColonna(y);
+        casellaPlayer.GetComponent<Casella>().SetTable(numtable);
+        casellaPlayer.GetComponent<Casella>().SetPlayerTable(2);
+        
     }
 
     void Awake()

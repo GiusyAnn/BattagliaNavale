@@ -68,18 +68,9 @@ public class PlayerManager : MonoBehaviourPun
                     casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Casella"),
                         new Vector3(-300 + (x * 100), 1, -700 + (y * 100)), Quaternion.identity, 0);
 
-                    casellaPlayer.GetComponent<Casella>().SetRiga(x);
-                    casellaPlayer.GetComponent<Casella>().SetColonna(y);
+                    setCasella(casellaPlayer, x, y, 1);
 
-                    casellaPlayer.GetComponent<Casella>().SetTable(1);
-                    if (PhotonNetwork.IsMasterClient)
-                    {
-                        casellaPlayer.GetComponent<Casella>().SetPlayerTable(1);
-                    }
-                    else
-                    {
-                        casellaPlayer.GetComponent<Casella>().SetPlayerTable(2);
-                    }
+                    
 
                 }
             }
@@ -96,17 +87,7 @@ public class PlayerManager : MonoBehaviourPun
                     casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Casella"),
                         new Vector3(-300 + (x * 100), 1, 100 + (y * 100)), Quaternion.identity, 0);
 
-                    casellaPlayer.GetComponent<Casella>().SetRiga(x);
-                    casellaPlayer.GetComponent<Casella>().SetColonna(y);
-                    casellaPlayer.GetComponent<Casella>().SetTable(2);
-                    if (PhotonNetwork.IsMasterClient)
-                    {
-                        casellaPlayer.GetComponent<Casella>().SetPlayerTable(1);
-                    }
-                    else
-                    {
-                        casellaPlayer.GetComponent<Casella>().SetPlayerTable(2);
-                    }
+                    setCasella(casellaPlayer, x, y, 2);
 
                 }
             }
@@ -114,6 +95,16 @@ public class PlayerManager : MonoBehaviourPun
         
         #endregion
 
+    }
+
+    //Prendiamo lo script presente nel GameObject Casella che abbiamo istanziato e vi inseriamo le informazioni di base
+    public void setCasella (GameObject casellaPlayer, int x, int y, int numtable)
+    {
+        casellaPlayer.GetComponent<Casella>().SetRiga(x);
+        casellaPlayer.GetComponent<Casella>().SetColonna(y);
+        casellaPlayer.GetComponent<Casella>().SetTable(numtable);
+        casellaPlayer.GetComponent<Casella>().SetPlayerTable(1);
+        
     }
 
     void Awake()
