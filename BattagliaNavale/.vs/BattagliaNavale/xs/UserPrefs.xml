@@ -1,16 +1,19 @@
-﻿<Properties StartupConfiguration="{32B9AD03-9BAF-DD71-C90C-D1B70D038FE5}|">
+﻿<Properties StartupConfiguration="{FF7CC2DA-6BE5-692E-3AB1-CD3B559EFA9D}|Unit test">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/PlayerManager.cs">
     <Files>
       <File FileName="Assets/Script/GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/PlayerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/PlayerManager.cs" Line="100" Column="5" />
+      <File FileName="Assets/Script/PlayerManagerP2.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BattagliaNavale" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Script" expanded="True">
-                <Node name="PlayerManager.cs" selected="True" />
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Script" expanded="True">
+                  <Node name="PlayerManager.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -25,4 +28,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PhotonUnityNetworking.Editor PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
