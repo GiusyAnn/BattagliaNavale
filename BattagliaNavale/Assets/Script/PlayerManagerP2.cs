@@ -18,7 +18,7 @@ public class PlayerManagerP2 : MonoBehaviourPun
 
     [Tooltip("Prefabricato del UI del giocatore")]
     [SerializeField]
-    public GameObject PlayerUIPrefab;
+    public GameObject PlayerUIPrefab2;
 
     public Camera mycam2;
     public AudioListener myal2;
@@ -30,9 +30,9 @@ public class PlayerManagerP2 : MonoBehaviourPun
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerUIPrefab != null)
+        if (PlayerUIPrefab2 != null)
         {
-            GameObject _uiGo = Instantiate(PlayerUIPrefab);
+            GameObject _uiGo = Instantiate(PlayerUIPrefab2);
             _uiGo.SendMessage("SetTarget2", this, SendMessageOptions.RequireReceiver);
         }
         else
