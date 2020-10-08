@@ -6,36 +6,30 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviourPun
 {
 
-    #region Fields
-
-    public GameObject casellaPlayer;
-    int x, y;
-
-    #endregion
-
-
     #region Public Fields
-
-    [Tooltip("Istanza del giocatore Locale, per sapere se il giocatore è rappresentato nella scena")]
-    public static GameObject LocalPlayerIstance;
 
     [Tooltip("Prefabricato del UI del giocatore")]
     [SerializeField]
     public GameObject PlayerUIPrefab;
-    public Camera localCamera;
+
+    public GameObject casellaPlayer;
+
+    public Camera mycam;
+    public AudioListener myal;
+
+    PhotonView pv;
+    int x, y;
+    
+    [Tooltip("Istanza del giocatore Locale, per sapere se il giocatore è rappresentato nella scena")]
+    public static GameObject LocalPlayerIstance;
+
+    
 
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(GameObject.Find("MainCamera"));
-        if(LocalPlayerIstance)
-        {
-            localCamera.gameObject.tag = "MainCamera";
-        }
-        
-
         if (PlayerUIPrefab != null)
         {
             GameObject _uiGo = Instantiate(PlayerUIPrefab);
@@ -46,47 +40,56 @@ public class PlayerManager : MonoBehaviourPun
             Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerUiPrefab non è presente.", this);
         }
 
-        #region Tavole di Gioco
-
-        if (PhotonNetwork.IsMasterClient)
+        pv = GetComponent<PhotonView>();
+        if(pv.IsMine)
         {
-            //Istanziamo la Prima Tabella di Gioco
-            for (x = 0; x < 7; x++)
+            #region Tavole di Gioco
+
+            if (PhotonNetwork.IsMasterClient)
             {
-                for (y = 0; y < 7; y++)
+                //Istanziamo la Prima Tabella di Gioco
+                for (x = 0; x < 7; x++)
                 {
+                    for (y = 0; y < 7; y++)
+                    {
 
-                    Debug.LogFormat("Istanziamo la casella della 1 tavola in riga " + x + " e colonna " + y);
+                        Debug.LogFormat("Istanziamo la casella della 1 tavola in riga " + x + " e colonna " + y);
 
-                    casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Casella"),
-                        new Vector3(-300 + (x * 100), 1, -700 + (y * 100)), Quaternion.identity, 0);
+                        casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Casella"),
+                            new Vector3(-300 + (x * 100), 1, -700 + (y * 100)), Quaternion.identity, 0);
 
-                    setCasella(casellaPlayer, x, y, 1);
+                        setCasella(casellaPlayer, x, y, 1);
 
-                    
 
+
+                    }
+                }
+
+
+
+                //Istanziamo la Seconda tabella di Gioco
+                for (int x = 0; x < 7; ++x)
+                {
+                    for (int y = 0; y < 7; ++y)
+                    {
+                        Debug.LogFormat("Istanziamo la casella della 2 tavola in riga " + x + " e colonna " + y);
+
+                        casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Casella"),
+                            new Vector3(-300 + (x * 100), 1, 100 + (y * 100)), Quaternion.identity, 0);
+
+                        setCasella(casellaPlayer, x, y, 2);
+
+                    }
                 }
             }
 
-
-
-            //Istanziamo la Seconda tabella di Gioco
-            for (int x = 0; x < 7; ++x)
-            {
-                for (int y = 0; y < 7; ++y)
-                {
-                    Debug.LogFormat("Istanziamo la casella della 2 tavola in riga " + x + " e colonna " + y);
-
-                    casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Casella"),
-                        new Vector3(-300 + (x * 100), 1, 100 + (y * 100)), Quaternion.identity, 0);
-
-                    setCasella(casellaPlayer, x, y, 2);
-
-                }
-            }
+            #endregion
         }
-        
-        #endregion
+        else
+        {
+            Destroy(mycam);
+            Destroy(myal);
+        }
 
     }
 

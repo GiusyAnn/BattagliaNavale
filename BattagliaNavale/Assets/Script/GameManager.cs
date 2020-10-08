@@ -6,11 +6,17 @@ using System.IO;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
+    #region Public Fields
+
+
     [Tooltip("Prefab da usare per istanziare le piattaforme di gioco")]
     GameObject playerPrefab;
     GameObject playerPrefab2;
+   
     Casella cas;
     Casella[][] globalTable;
+
+    #endregion
 
     #region Photon Callbacks
     /// <summary>
@@ -73,8 +79,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-                  
-                Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
+        Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
 
         #region Istantiate Player
         if (PhotonNetwork.IsMasterClient)
@@ -82,12 +87,14 @@ public class GameManager : MonoBehaviourPunCallbacks
             // siamo in una stanza. genera un personaggio per il giocatore locale. viene sincronizzato utilizzando PhotonNetwork.Instantiate
             playerPrefab = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Plane"), new Vector3(0f, 0f, 0f), Quaternion.identity, 0);
             DontDestroyOnLoad(playerPrefab);
+           
         }
         else
         {
             // siamo in una stanza. genera un personaggio per il giocatore locale. viene sincronizzato utilizzando PhotonNetwork.Instantiate
             playerPrefab2 = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlanePlayer2"), new Vector3(1000f, 0f, 0f), Quaternion.identity, 0);
             DontDestroyOnLoad(playerPrefab);
+            
         }
         #endregion
 
@@ -110,4 +117,6 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         
     }
+
+    
 }

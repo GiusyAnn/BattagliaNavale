@@ -3,89 +3,91 @@ using System.IO;
 using Photon.Pun;
 using UnityEngine;
 
-public class PlayerManagerP2 : MonoBehaviourPun//, IPunObservable
+public class PlayerManagerP2 : MonoBehaviourPun
 {
 
-    #region Fields
+    #region Public Fields
 
     public GameObject casellaPlayer;
     Casella cas;
     public Casella[][] globalTable;
     int x, y;
 
-    #endregion
-
-    
-    #region Public Fields
-
     [Tooltip("Istanza del giocatore Locale, per sapere se il giocatore è rappresentato nella scena")]
-    public static GameObject LocalPlayerIstance;
+    public static GameObject LocalPlayerIstance2;
 
     [Tooltip("Prefabricato del UI del giocatore")]
     [SerializeField]
     public GameObject PlayerUIPrefab;
-    public Camera localCamera;
+
+    public Camera mycam2;
+    public AudioListener myal2;
+
+    PhotonView pv;
 
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(GameObject.Find("MainCamera"));
-        if (LocalPlayerIstance)
-        {
-            localCamera.gameObject.tag = "MainCamera";
-        }
-
         if (PlayerUIPrefab != null)
         {
             GameObject _uiGo = Instantiate(PlayerUIPrefab);
-            _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+            _uiGo.SendMessage("SetTarget2", this, SendMessageOptions.RequireReceiver);
         }
         else
         {
             Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerUiPrefab non è presente.", this);
         }
 
-        #region Tavole di Gioco
-
-        if(!PhotonNetwork.IsMasterClient)
-        { 
-        //Istanziamo la Prima Tabella di Gioco
-        for (x = 0; x < 7; ++x)
+        pv = GetComponent<PhotonView>();
+        if (pv.IsMine)
         {
-            for (y = 0; y < 7; ++y)
+            #region Tavole di Gioco
+
+            if (!PhotonNetwork.IsMasterClient)
             {
+                //Istanziamo la Prima Tabella di Gioco
+                for (x = 0; x < 7; ++x)
+                {
+                    for (y = 0; y < 7; ++y)
+                    {
 
-                Debug.LogFormat("Istanziamo la casella della 1 tavola in riga " + x + " e colonna " + y);
+                        Debug.LogFormat("Istanziamo la casella della 1 tavola in riga " + x + " e colonna " + y);
 
-                casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CasellaP2"),
-                    new Vector3(700 + (x * 100), 1, -700 + (y * 100)), Quaternion.identity, 0);
+                        casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CasellaP2"),
+                            new Vector3(700 + (x * 100), 1, -700 + (y * 100)), Quaternion.identity, 0);
 
-                    setCasella(casellaPlayer, x, y, 1);
+                        setCasella(casellaPlayer, x, y, 1);
 
+                    }
                 }
+
+
+
+                //Istanziamo la Seconda tabella di Gioco
+                for (int x = 0; x < 7; ++x)
+                {
+                    for (int y = 0; y < 7; ++y)
+                    {
+                        Debug.LogFormat("Istanziamo la casella della 2 tavola in riga " + x + " e colonna " + y);
+
+                        casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CasellaP2"),
+                            new Vector3(700 + (x * 100), 1, 100 + (y * 100)), Quaternion.identity, 0);
+
+                        setCasella(casellaPlayer, x, y, 2);
+
+                    }
+                }
+            }
+
+            #endregion
         }
-
-
-
-        //Istanziamo la Seconda tabella di Gioco
-        for (int x = 0; x < 7; ++x)
+        else
         {
-            for (int y = 0; y < 7; ++y)
-            {
-                Debug.LogFormat("Istanziamo la casella della 2 tavola in riga " + x + " e colonna " + y);
-
-                casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CasellaP2"),
-                    new Vector3(700 + (x * 100), 1, 100 + (y * 100)), Quaternion.identity, 0);
-
-                    setCasella(casellaPlayer, x, y, 2);
-
-                }
+            Destroy(myal2);
+            Destroy(mycam2);
         }
-    }
-
-       #endregion
 
     }
 
@@ -105,7 +107,7 @@ public class PlayerManagerP2 : MonoBehaviourPun//, IPunObservable
         //teniamo traccia dell'istanza del giocatore Locale per impedire la creazione di istanze quando i livelli sono sincronizzati
         if(photonView.IsMine)
         {
-            PlayerManager.LocalPlayerIstance = this.gameObject;
+            PlayerManagerP2.LocalPlayerIstance2 = this.gameObject;
 
             //contrassegniamo come non distruggere al caricamento in modo che l'istanza sopravviva alla sincronizzazione dei livelli,
             //offrendo così un'esperienza senza interruzioni quando i livelli vengono caricati.
