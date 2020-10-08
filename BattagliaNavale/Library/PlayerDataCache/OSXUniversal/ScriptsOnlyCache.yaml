@@ -2,7 +2,6 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BattagliaNavale.Launcher
-    - CameraWork
     - Casella
     - GameManager
     - PlayerManager
@@ -57,6 +56,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
+    com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/Scenes/Room for 1.unity:
     - Class: 1
@@ -219,8 +220,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12306}
     - Class: 114
-      Script: {instanceID: 12624}
-    - Class: 114
       Script: {instanceID: 12834}
     - Class: 114
       Script: {instanceID: 13170}
@@ -361,8 +360,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14356}
     - Class: 114
       Script: {instanceID: 14394}
-    - Class: 114
-      Script: {instanceID: 15762}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -806,7 +803,7 @@ ScriptsOnlyBuild:
     className: TabViewManager
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
@@ -1028,7 +1025,7 @@ ScriptsOnlyBuild:
     className: TMP_Asset
   - hash:
       serializedVersion: 2
-      Hash: 7711a2b028ee9dfb90e4ae85a28cc5fa
+      Hash: 696994a8d3a63aa595c45a68a7b7d5b2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManagerP2
@@ -1472,7 +1469,7 @@ ScriptsOnlyBuild:
     className: PlayerManager
   - hash:
       serializedVersion: 2
-      Hash: 7711a2b028ee9dfb90e4ae85a28cc5fa
+      Hash: 696994a8d3a63aa595c45a68a7b7d5b2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManager

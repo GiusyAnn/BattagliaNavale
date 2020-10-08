@@ -22,26 +22,19 @@ public class PlayerManager : MonoBehaviourPun
     [Tooltip("Prefabricato del UI del giocatore")]
     [SerializeField]
     public GameObject PlayerUIPrefab;
+    public Camera localCamera;
 
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        CameraWork _cameraWork = this.gameObject.GetComponent<CameraWork>();
-
-
-        if (_cameraWork != null)
+        Destroy(GameObject.Find("MainCamera"));
+        if(LocalPlayerIstance)
         {
-            if (photonView.IsMine)
-            {
-                _cameraWork.OnStartFollowing();
-            }
+            localCamera.gameObject.tag = "MainCamera";
         }
-        else
-        {
-            Debug.LogError("<Color=Red><a>Missing</a></Color> CameraWork Component on playerPrefab.", this);
-        }
+        
 
         if (PlayerUIPrefab != null)
         {
