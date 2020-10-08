@@ -97,6 +97,8 @@ public class PlayerManagerP2 : MonoBehaviourPun//, IPunObservable
 
     }
 
+    //Prendiamo lo script presente nel GameObject Casella che abbiamo istanziato e vi inseriamo le informazioni di base
+    [PunRPC]
     public void setCasella(GameObject casellaPlayer, int x, int y, int numtable)
     {
         casellaPlayer.GetComponent<Casella>().SetRiga(x);

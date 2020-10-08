@@ -92,21 +92,17 @@ public class GameManager : MonoBehaviourPunCallbacks
         #endregion
 
         for (int x = 0; x < 7; x++)
-                {
-                    for (int y = 0; y < 7; y++)
-                    {
+         {
+              for (int y = 0; y < 7; y++)
+               {
                         cas.SetRiga(x);
                         cas.SetColonna(y);
 
                         globalTable[x][y] = cas;
 
-                    }
-                }
-
-           
-        
-
-     }
+               }
+         }
+    }
     
 
     // Update is called once per frame

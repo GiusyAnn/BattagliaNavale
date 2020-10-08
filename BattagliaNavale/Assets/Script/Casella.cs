@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
-public class Casella : MonoBehaviour
+public class Casella : MonoBehaviour, IPunObservable
 {
 
     #region Public Fields
@@ -124,5 +125,37 @@ public class Casella : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            // Possediamo questo giocatore: invia queste informazioni agli altri i nostri dati
+            stream.SendNext(table);
+            stream.SendNext(riga);
+            stream.SendNext(colonna);
+            stream.SendNext(naveposizionataP1);
+            stream.SendNext(naveposizionataP2);
+            stream.SendNext(colpitaP1);
+            stream.SendNext(colpitaP2);
+            stream.SendNext(affondatadaP1);
+            stream.SendNext(affondatadaP2);
+            stream.SendNext(player);
+        }
+        else
+        {
+            //Lettore di rete, ricevi dati
+            this.table = (int)stream.ReceiveNext();
+            this.riga = (int)stream.ReceiveNext();
+            this.colonna = (int)stream.ReceiveNext();
+            this.naveposizionataP1 = (bool)stream.ReceiveNext();
+            this.naveposizionataP2 = (bool)stream.ReceiveNext();
+            this.colpitaP1 = (bool)stream.ReceiveNext();
+            this.colpitaP2 = (bool)stream.ReceiveNext();
+            this.affondatadaP1 = (bool)stream.ReceiveNext();
+            this.affondatadaP2 = (bool)stream.ReceiveNext();
+            this.player = (int)stream.ReceiveNext();
+        }
     }
 }
