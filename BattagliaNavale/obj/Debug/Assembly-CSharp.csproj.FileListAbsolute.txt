@@ -1,2 +1,0 @@
-/Users/giusya/GitHub Project/BattagliaNavale/BattagliaNavale/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
-/Users/giusya/GitHub Project/BattagliaNavale/BattagliaNavale/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
