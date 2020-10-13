@@ -39,11 +39,11 @@ public class PlayerUI : MonoBehaviour
         }
 
         //Distruggi l'oggetto se il targher è vuoto
-        if (target == null)
+       /* if (target == null)
         {
             Destroy(this.gameObject);
             return;
-        }
+        }*/
     }
 
      void Awake()

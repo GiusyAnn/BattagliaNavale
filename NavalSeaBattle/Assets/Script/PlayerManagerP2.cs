@@ -134,6 +134,6 @@ public class PlayerManagerP2 : MonoBehaviourPun
         }
 
         GameObject _uiGo = Instantiate(this.PlayerUIPrefab);
-        _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+        _uiGo.SendMessage("SetTarget2", this, SendMessageOptions.RequireReceiver);
     }
 }

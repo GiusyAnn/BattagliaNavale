@@ -1,7 +1,5 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp-Editor.dll:
-    - Photon.Pun.PunSceneSettings
     Assembly-CSharp.dll:
     - BattagliaNavale.Launcher
     - Casella
@@ -918,12 +916,6 @@ ScriptsOnlyBuild:
     className: PlayerManagerP2
   - hash:
       serializedVersion: 2
-      Hash: cc8c1f6025702f2e5f86a2e4b5d3d483
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraWork
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Chat.UtilityScripts
@@ -1492,12 +1484,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: OnlineDocButton
-  - hash:
-      serializedVersion: 2
-      Hash: cc8c1f6025702f2e5f86a2e4b5d3d483
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraWork2
   - hash:
       serializedVersion: 2
       Hash: ea4e73561703f90fbdc820af646becad
