@@ -340,8 +340,6 @@
           </e>
         </e>
         <e p="Script" t="Include">
-          <e p="CameraWork.cs" t="Include" />
-          <e p="CameraWork2.cs" t="Include" />
           <e p="Casella.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Launcher.cs" t="Include" />
