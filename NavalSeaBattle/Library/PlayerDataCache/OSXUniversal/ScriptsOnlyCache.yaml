@@ -20,6 +20,7 @@ ScriptsOnlyBuild:
     - PlayerNameInputField
     - PlayerUI
     Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
@@ -119,7 +120,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13480}
     - Class: 114
-      Script: {instanceID: 14972}
+      Script: {instanceID: 14968}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
