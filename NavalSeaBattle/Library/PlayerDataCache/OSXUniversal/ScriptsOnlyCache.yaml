@@ -1,5 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - Photon.Pun.PunSceneSettings
     Assembly-CSharp.dll:
     - BattagliaNavale.Launcher
     - Casella
@@ -784,7 +786,7 @@ ScriptsOnlyBuild:
     className: OnStartDelete
   - hash:
       serializedVersion: 2
-      Hash: 3100480270f86547275409c36efaa9e0
+      Hash: b081af3321d3da198ccd3e13876423b7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Casella

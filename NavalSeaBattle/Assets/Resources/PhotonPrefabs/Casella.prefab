@@ -118,6 +118,8 @@ MonoBehaviour:
   affondatadaP1: 0
   affondatadaP2: 0
   player: 0
+  mirino: {fileID: 2800000, guid: c3d98b3536e6d48c59637da36ae9c671, type: 3}
+  mouse: {fileID: 2800000, guid: f04c7a2a2cc09436288afcea23294127, type: 3}
 --- !u!114 &-1827956080036926084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +139,7 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
+  - {fileID: 2586747199744127897}
   - {fileID: -8766709764111795850}
   viewIdField: 0
   InstantiationId: 0

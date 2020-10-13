@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
@@ -17,7 +18,9 @@ public class Casella : MonoBehaviour, IPunObservable
         public bool affondatadaP1;
         public bool affondatadaP2;
         public int player;
-    
+
+        public Texture2D mirino;
+        public Texture2D mouse;
 
 
     #endregion
@@ -127,6 +130,20 @@ public class Casella : MonoBehaviour, IPunObservable
         
     }
 
+    #region Mouse Functions
+
+    //facciamo in modo che quando il Mouse passi sopra le caselle, esso divento un mirino
+    private void OnMouseEnter()
+    {
+        Cursor.SetCursor(mirino, Vector2.zero, CursorMode.Auto);
+    }
+
+    private void OnMouseExit()
+    {
+        Cursor.SetCursor(mouse, Vector2.zero, CursorMode.Auto);
+    }
+
+    #endregion
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
