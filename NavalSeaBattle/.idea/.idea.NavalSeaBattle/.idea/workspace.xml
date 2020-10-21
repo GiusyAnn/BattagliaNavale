@@ -20,41 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16878fd8-451c-4edc-b39c-28530b5951a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/45286929-nave-a-vela-isolato-su-sfondo-bianco-illustrazione-vettoriale-cartone-animato-.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/45286929-nave-a-vela-isolato-su-sfondo-bianco-illustrazione-vettoriale-cartone-animato-.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/946cd6224c8beb87f5ab8aa4cd7eb6c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/946cd6224c8beb87f5ab8aa4cd7eb6c3.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/NavePosizionata.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/NavePosizionata.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/10639-tee.png.jpeg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/10639-tee.png.jpeg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/kisspng-reticle-telescopic-sight-computer-icons-bullet-holes-5ab79396019274.1571715415219803100065 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/kisspng-reticle-telescopic-sight-computer-icons-bullet-holes-5ab79396019274.1571715415219803100065 1.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/Casella.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/Casella.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/CasellaP2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/CasellaP2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/Plane.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/Plane.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/PlanePlayer2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/PlanePlayer2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room for 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room for 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Casella.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Casella.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerManagerP2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerManagerP2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0e/0efc76faf358b80d34c09b0de0ef5fc1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/10/10d71a9bec1f9f760cca360fdcaa5231" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/14/14f11b66261f34e47d3afa78f4bf102f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/16/164c9757d4c3d62aa79f7a7d6a23c7db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2c/2cc6bedc614ccf744ae1880f17963f3d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3e/3e48cc4c37c90c1568178dceff9c6583" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/50/50c56bfe00ee5066ba5b04b129baa5a5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/55/5599dbf03359ad3ceaba01d614f96c35" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7b/7b01a2d62247d665d3c2db0d54608153" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a3/a34b2cfe372bfd5c58755ba1f2f83e9f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a5/a5ca73a0ff85288c8c04386e634cc871" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c29a6150801f95e03b2a3fc625bf1047" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c4/c4742abf105064f39fe4398bf3029b91" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e3/e350df284612203269ded14c9ba2516f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ee/ee0dc96aa0f42db3652f006d189114ab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f7/f7db6ce42c964b98026b7ffbe53ee85d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fd/fd83ad776450bf82a448445b80021416" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Assembly-CSharp.pdb" afterDir="false" />
@@ -68,7 +50,7 @@
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets0.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets.resS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets1.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets1.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets2.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets2.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/ScriptsOnlyCache.yaml" afterDir="false" />
@@ -76,16 +58,8 @@
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-35786a8531a7b4d809cae2c080cc588c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-45662d85588194b6fa6a24ccdbbcda97" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-5164d6a81a994468eb4ee1497772580c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-7e44196047467415a8437f876a4f81c8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a0df66210592842e28ca67fcf8b95fe6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a19b29293043d41029efcbc0e0cebf84" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-b74b6f22a97d0487290659732feb5590" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-dd6b953bab6f142f3802d4b195bfc847" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-e48f16c0a57d84be5894b5c5049b7eaa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-eee144f0f6f8843b2bd2deb04efcfabe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/ProcessJobs/b30036213f2a442216cc3562d15042db.bakert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityLockfile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,9 +76,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/MouseCursor.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/mouseCursor.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerManagerP2.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Casella.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerManagerP2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
       </list>
     </option>
@@ -176,6 +150,7 @@
       <workItem from="1603284893166" duration="151000" />
       <workItem from="1603285219694" duration="87000" />
       <workItem from="1603285329543" duration="7897000" />
+      <workItem from="1603303171000" duration="7610000" />
     </task>
     <servers />
   </component>
@@ -209,5 +184,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1603292566912" />
+    <state x="571" y="370" key="VCS.ChangelistChooser" timestamp="1603308031642">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="571" y="370" key="VCS.ChangelistChooser/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1603308031642" />
   </component>
 </project>

@@ -22,7 +22,7 @@ public class PlayerManagerP2 : MonoBehaviourPun
 
     public Camera mycam2;
     public AudioListener myal2;
-
+    
     PhotonView pv;
 
     #endregion
@@ -52,14 +52,12 @@ public class PlayerManagerP2 : MonoBehaviourPun
                 {
                     for (y = 1; y < 11; ++y)
                     {
-
-                        Debug.LogFormat("Istanziamo la casella della 1 tavola in riga " + x + " e colonna " + y);
-
                         casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CasellaP2"),
                             new Vector3(700 + (x * 90), 1, -1050 + (y * 90)), Quaternion.identity, 0);
 
                         setCasella(casellaPlayer, x, y, 1);
-
+                        
+                        GameManager.table1Player2[x, y] = casellaPlayer.GetComponent<Casella>();
                     }
                 }
 
@@ -70,14 +68,13 @@ public class PlayerManagerP2 : MonoBehaviourPun
                 {
                     for (int y = 1; y < 11; ++y)
                     {
-                        Debug.LogFormat("Istanziamo la casella della 2 tavola in riga " + x + " e colonna " + y);
-
                         casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CasellaP2"),
                             new Vector3(700 + (x * 90), 1, 50 + (y * 90)), Quaternion.identity, 0);
 
                         setCasella(casellaPlayer, x, y, 2);
-
-                    }
+                        
+                        GameManager.table2Player2[x, y] = casellaPlayer.GetComponent<Casella>();
+                   }
                 }
             }
 
@@ -136,4 +133,6 @@ public class PlayerManagerP2 : MonoBehaviourPun
         GameObject _uiGo = Instantiate(this.PlayerUIPrefab);
         _uiGo.SendMessage("SetTarget2", this, SendMessageOptions.RequireReceiver);
     }
+    
+    
 }

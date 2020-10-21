@@ -5,7 +5,7 @@ using Photon.Realtime;
 using System.IO;
 using System;
 
-public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
+public class GameManager : MonoBehaviourPunCallbacks
 {
     #region Public Fields
 
@@ -13,10 +13,15 @@ public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
     [Tooltip("Prefab da usare per istanziare le piattaforme di gioco")]
     GameObject playerPrefab;
     GameObject playerPrefab2;
-   
-    Casella cas = new Casella();
-    public static Casella[,] globalTable = new Casella[11,11]; 
 
+    //Dichiaro le 4 tavole di gioco
+    public static Casella[,] table1Player1 = new Casella[11,11];
+    public static Casella[,] table2Player1 = new Casella[11,11];
+    public static Casella[,] table1Player2 = new Casella[11,11];
+    public static Casella[,] table2Player2 = new Casella[11,11];
+   
+    
+    
     #endregion
 
     #region Photon Callbacks
@@ -98,15 +103,23 @@ public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
             
         }
         #endregion
-
-        for (int x = 1; x < 11; x++)
-        {
-            for (int y = 1; y < 11; y++)
-            {
-                globalTable[x,y] = cas;
-            }
-        }
     }
+
+    #region Modifiche Tavole
+
+    public static void PosizionamentoPlayer1(int riga, int colonna)
+    {
+        table1Player1[riga,colonna].GetComponent<Casella>().PosizionaNaveP1();
+        table2Player2[riga, colonna].GetComponent<Casella>().PosizionaNaveP1();
+    }
+    
+    public static void PosizionamentoPlayer2(int riga, int colonna)
+    {
+        table1Player2[riga,colonna].GetComponent<Casella>().PosizionaNaveP2();
+        table2Player1[riga, colonna].GetComponent<Casella>().PosizionaNaveP2();
+    }
+
+    #endregion
     
 
     // Update is called once per frame
@@ -114,9 +127,5 @@ public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
     {
         
     }
-
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        throw new System.NotImplementedException();
-    }
+    
 }

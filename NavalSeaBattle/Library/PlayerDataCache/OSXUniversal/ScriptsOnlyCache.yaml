@@ -121,7 +121,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13480}
     - Class: 114
-      Script: {instanceID: 14388}
+      Script: {instanceID: 15120}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -789,7 +789,7 @@ ScriptsOnlyBuild:
     className: OnStartDelete
   - hash:
       serializedVersion: 2
-      Hash: b081af3321d3da198ccd3e13876423b7
+      Hash: 540cd71a0eae88d7d6d8954a4bd989a5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Casella

@@ -21,7 +21,7 @@ public class Casella : MonoBehaviour, IPunObservable
 
         public Texture2D mirino;
         public Texture2D mouse;
-
+        public Material nave;
 
     #endregion
 
@@ -154,14 +154,12 @@ public class Casella : MonoBehaviour, IPunObservable
             //Posizionamento Nave
             if (GameController.startP1 == false && GameController.naviP1<10 && this.naveposizionataP1 == false && this.table == 1)
             {
-                this.naveposizionataP1 = true;
+                //this.naveposizionataP1 = true;
                 GameController.naviP1 = GameController.naviP1 + 1;
-                Debug.Log("Giocatore 1 : ho posizionato una nave in riga " + this.riga + " e colonna " + this.colonna +
-                          " numero totale di navi : " + GameController.naviP1);
+                this.gameObject.GetComponent<MeshRenderer>().material = nave;
+                GameManager.PosizionamentoPlayer1(riga, colonna);
             }
 
-            GameManager.globalTable[this.riga, this.colonna] = this;
-            Debug.Log("Giocatore 1 : ho aggiornato la mia modifica nella matrice");
         }
 
         if (this.player == 2 && this.riga != 0 && this.colonna != 0)
@@ -169,17 +167,18 @@ public class Casella : MonoBehaviour, IPunObservable
             //Posizionamento Nave
             if (GameController.startP2 == false && GameController.naviP2<10 && this.naveposizionataP2 == false && this.table == 1)
             {
-                this.naveposizionataP2 = true;
-                GameController.naviP2 = GameController.naviP1 + 1;
-                Debug.Log("Giocatore 2 : ho posizionato una nave in riga "+this.riga+" e colonna "+ this.colonna+" numero totale di navi : "+GameController.naviP2);
+                //this.naveposizionataP2 = true;
+                GameController.naviP2 = GameController.naviP2 + 1;
+                this.gameObject.GetComponent<MeshRenderer>().material = nave;
+                GameManager.PosizionamentoPlayer2(riga, colonna);
             }
             
-            GameManager.globalTable[this.riga, this.colonna] = this;
-            Debug.Log("Giocatore 2 : ho aggiornato la mia modifica nella matrice");
         }
     }
 
     #endregion
+
+    
     
     #region PhotonView Observer
 
