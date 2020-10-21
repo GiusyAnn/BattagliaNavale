@@ -48,15 +48,15 @@ public class PlayerManager : MonoBehaviourPun
             if (PhotonNetwork.IsMasterClient)
             {
                 //Istanziamo la Prima Tabella di Gioco
-                for (x = 0; x < 7; x++)
+                for (x = 1; x < 11; x++)
                 {
-                    for (y = 0; y < 7; y++)
+                    for (y = 1; y < 11; y++)
                     {
 
                         Debug.LogFormat("Istanziamo la casella della 1 tavola in riga " + x + " e colonna " + y);
 
                         casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Casella"),
-                            new Vector3(-300 + (x * 100), 1, -700 + (y * 100)), Quaternion.identity, 0);
+                            new Vector3(-500 + (x * 90), 1, -1000 + (y * 90)), Quaternion.identity, 0);
 
                         setCasella(casellaPlayer, x, y, 1);
 
@@ -68,14 +68,14 @@ public class PlayerManager : MonoBehaviourPun
 
 
                 //Istanziamo la Seconda tabella di Gioco
-                for (int x = 0; x < 7; ++x)
+                for (int x = 1; x < 11; ++x)
                 {
-                    for (int y = 0; y < 7; ++y)
+                    for (int y = 1; y < 11; ++y)
                     {
                         Debug.LogFormat("Istanziamo la casella della 2 tavola in riga " + x + " e colonna " + y);
 
                         casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Casella"),
-                            new Vector3(-300 + (x * 100), 1, 100 + (y * 100)), Quaternion.identity, 0);
+                            new Vector3(-500 + (x * 90), 1, 0 + (y * 90)), Quaternion.identity, 0);
 
                         setCasella(casellaPlayer, x, y, 2);
 

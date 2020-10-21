@@ -341,9 +341,9 @@
         </e>
         <e p="Script" t="Include">
           <e p="Casella.cs" t="Include" />
+          <e p="GameController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Launcher.cs" t="Include" />
-          <e p="MouseCursor.cs" t="Include" />
           <e p="PlayerManager.cs" t="Include" />
           <e p="PlayerManagerP2.cs" t="Include" />
           <e p="PlayerNameInputField.cs" t="Include" />

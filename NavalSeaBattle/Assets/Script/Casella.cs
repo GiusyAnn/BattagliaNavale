@@ -9,8 +9,8 @@ public class Casella : MonoBehaviour, IPunObservable
 
     #region Public Fields
         public int table;
-        public int riga;
-        public int colonna;
+        public int riga = 0;
+        public int colonna = 0;
         public bool naveposizionataP1;
         public bool colpitaP1;
         public bool naveposizionataP2;
@@ -144,35 +144,77 @@ public class Casella : MonoBehaviour, IPunObservable
     }
 
     #endregion
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+
+    #region OnMouse
+
+    public void OnMouseDown()
     {
-        if (stream.IsWriting)
+        if (this.player == 1 && this.riga != 0 && this.colonna != 0)
         {
-            // Possediamo questo giocatore: invia queste informazioni agli altri i nostri dati
-            stream.SendNext(table);
-            stream.SendNext(riga);
-            stream.SendNext(colonna);
-            stream.SendNext(naveposizionataP1);
-            stream.SendNext(naveposizionataP2);
-            stream.SendNext(colpitaP1);
-            stream.SendNext(colpitaP2);
-            stream.SendNext(affondatadaP1);
-            stream.SendNext(affondatadaP2);
-            stream.SendNext(player);
+            //Posizionamento Nave
+            if (GameController.startP1 == false && GameController.naviP1<10 && this.naveposizionataP1 == false && this.table == 1)
+            {
+                this.naveposizionataP1 = true;
+                GameController.naviP1 = GameController.naviP1 + 1;
+                Debug.Log("Giocatore 1 : ho posizionato una nave in riga " + this.riga + " e colonna " + this.colonna +
+                          " numero totale di navi : " + GameController.naviP1);
+            }
+
+            GameManager.globalTable[this.riga, this.colonna] = this;
+            Debug.Log("Giocatore 1 : ho aggiornato la mia modifica nella matrice");
         }
-        else
+
+        if (this.player == 2 && this.riga != 0 && this.colonna != 0)
         {
-            //Lettore di rete, ricevi dati
-            this.table = (int)stream.ReceiveNext();
-            this.riga = (int)stream.ReceiveNext();
-            this.colonna = (int)stream.ReceiveNext();
-            this.naveposizionataP1 = (bool)stream.ReceiveNext();
-            this.naveposizionataP2 = (bool)stream.ReceiveNext();
-            this.colpitaP1 = (bool)stream.ReceiveNext();
-            this.colpitaP2 = (bool)stream.ReceiveNext();
-            this.affondatadaP1 = (bool)stream.ReceiveNext();
-            this.affondatadaP2 = (bool)stream.ReceiveNext();
-            this.player = (int)stream.ReceiveNext();
+            //Posizionamento Nave
+            if (GameController.startP2 == false && GameController.naviP2<10 && this.naveposizionataP2 == false && this.table == 1)
+            {
+                this.naveposizionataP2 = true;
+                GameController.naviP2 = GameController.naviP1 + 1;
+                Debug.Log("Giocatore 2 : ho posizionato una nave in riga "+this.riga+" e colonna "+ this.colonna+" numero totale di navi : "+GameController.naviP2);
+            }
+            
+            GameManager.globalTable[this.riga, this.colonna] = this;
+            Debug.Log("Giocatore 2 : ho aggiornato la mia modifica nella matrice");
         }
     }
+
+    #endregion
+    
+    #region PhotonView Observer
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsWriting)
+            {
+                // Possediamo questo giocatore: invia queste informazioni agli altri i nostri dati
+                stream.SendNext(table);
+                stream.SendNext(riga);
+                stream.SendNext(colonna);
+                stream.SendNext(naveposizionataP1);
+                stream.SendNext(naveposizionataP2);
+                stream.SendNext(colpitaP1);
+                stream.SendNext(colpitaP2);
+                stream.SendNext(affondatadaP1);
+                stream.SendNext(affondatadaP2);
+                stream.SendNext(player);
+            }
+            else
+            {
+                //Lettore di rete, ricevi dati
+                this.table = (int)stream.ReceiveNext();
+                this.riga = (int)stream.ReceiveNext();
+                this.colonna = (int)stream.ReceiveNext();
+                this.naveposizionataP1 = (bool)stream.ReceiveNext();
+                this.naveposizionataP2 = (bool)stream.ReceiveNext();
+                this.colpitaP1 = (bool)stream.ReceiveNext();
+                this.colpitaP2 = (bool)stream.ReceiveNext();
+                this.affondatadaP1 = (bool)stream.ReceiveNext();
+                this.affondatadaP2 = (bool)stream.ReceiveNext();
+                this.player = (int)stream.ReceiveNext();
+            }
+        }
+
+    #endregion
+   
 }

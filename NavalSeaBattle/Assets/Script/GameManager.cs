@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
 using System.IO;
+using System;
 
 public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
 {
@@ -13,8 +14,8 @@ public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
     GameObject playerPrefab;
     GameObject playerPrefab2;
    
-    Casella cas;
-    Casella[][] globalTable;
+    Casella cas = new Casella();
+    public static Casella[,] globalTable = new Casella[11,11]; 
 
     #endregion
 
@@ -92,23 +93,19 @@ public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
         else
         {
             // siamo in una stanza. genera un personaggio per il giocatore locale. viene sincronizzato utilizzando PhotonNetwork.Instantiate
-            playerPrefab2 = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlanePlayer2"), new Vector3(1000f, 0f, 0f), Quaternion.identity, 0);
+            playerPrefab2 = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlanePlayer2"), new Vector3(1200f, 0f, 0f), Quaternion.identity, 0);
             DontDestroyOnLoad(playerPrefab);
             
         }
         #endregion
 
-        for (int x = 0; x < 7; x++)
-         {
-              for (int y = 0; y < 7; y++)
-               {
-                        cas.SetRiga(x);
-                        cas.SetColonna(y);
-
-                        globalTable[x][y] = cas;
-
-               }
-         }
+        for (int x = 1; x < 11; x++)
+        {
+            for (int y = 1; y < 11; y++)
+            {
+                globalTable[x,y] = cas;
+            }
+        }
     }
     
 
