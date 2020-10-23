@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
 
-public class Tavola : MonoBehaviour//, IPunObservable
+public class Tavola : MonoBehaviour, IPunObservable
 {
     #region Public Fields
     
@@ -26,24 +26,6 @@ public class Tavola : MonoBehaviour//, IPunObservable
     {
         
     }
-    /*
-    #region Modifiche Tavole
-
-    [PunRPC]
-    public static void PosizionamentoPlayer1(int riga, int colonna)
-    {
-        table1Player1[riga,colonna].PosizionaNaveP1();
-        table2Player2[riga, colonna].PosizionaNaveP1();
-    }
-    
-    [PunRPC]
-    public static void PosizionamentoPlayer2(int riga, int colonna)
-    {
-        table1Player2[riga,colonna].PosizionaNaveP2();
-        table2Player1[riga, colonna].PosizionaNaveP2();
-    }
-
-    #endregion
     
     
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -65,6 +47,6 @@ public class Tavola : MonoBehaviour//, IPunObservable
             Tavola.table2Player1 = (Casella[,])stream.ReceiveNext();
         }
     } 
-    */
+    
     
 }
