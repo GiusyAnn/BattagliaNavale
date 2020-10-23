@@ -256,6 +256,7 @@
      <Compile Include="Assets\Script\PlayerManagerP2.cs" />
      <Compile Include="Assets\Script\PlayerNameInputField.cs" />
      <Compile Include="Assets\Script\PlayerUI.cs" />
+     <Compile Include="Assets\Script\Tavola.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/giusya/GitHub Project/BattagliaNavale/BattagliaNavale/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

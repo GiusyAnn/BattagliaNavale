@@ -17,7 +17,9 @@ public class PlayerManager : MonoBehaviourPun
     public Camera mycam;
     public AudioListener myal;
     
-
+    public static Casella[,] table1Player1 = new Casella[11,11];
+    public static Casella[,] table2Player1 = new Casella[11,11];
+    
     PhotonView pv;
     int x, y;
     
@@ -53,15 +55,12 @@ public class PlayerManager : MonoBehaviourPun
                 {
                     for (y = 1; y < 11; y++)
                     {
-
-                        Debug.LogFormat("Istanziamo la casella della 1 tavola in riga " + x + " e colonna " + y);
-
                         casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Casella"),
                             new Vector3(-500 + (x * 90), 1, -1000 + (y * 90)), Quaternion.identity, 0);
 
                         setCasella(casellaPlayer, x, y, 1);
 
-                        GameManager.table1Player1[x, y] = casellaPlayer.GetComponent<Casella>();
+                        table1Player1[x, y] = casellaPlayer.GetComponent<Casella>();
                     }
                 }
 
@@ -72,14 +71,12 @@ public class PlayerManager : MonoBehaviourPun
                 {
                     for (int y = 1; y < 11; ++y)
                     {
-                        Debug.LogFormat("Istanziamo la casella della 2 tavola in riga " + x + " e colonna " + y);
-
                         casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Casella"),
                             new Vector3(-500 + (x * 90), 1, 0 + (y * 90)), Quaternion.identity, 0);
 
                         setCasella(casellaPlayer, x, y, 2);
                         
-                        GameManager.table2Player1[x, y] = casellaPlayer.GetComponent<Casella>();
+                        table2Player1[x, y] = casellaPlayer.GetComponent<Casella>();
                    }
                 }
             }
@@ -124,6 +121,16 @@ public class PlayerManager : MonoBehaviourPun
         if (photonView.IsMine == false && PhotonNetwork.IsConnected == true)
         {
             return;
+        }
+
+        for (int i = 1; i < 11; i++)
+        {
+            for (int j = 1; j < 11; j++)
+            {
+                //Verifichiamo se il secondo giocatore ha posizionato una nave
+                if(GameManager.globalTable[i,j].naveposizionataP2 != table2Player1[i,j].naveposizionataP2)
+                    table2Player1[i,j].PosizionaNaveP2();
+            }
         }
     }
 

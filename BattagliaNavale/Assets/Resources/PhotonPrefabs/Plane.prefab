@@ -89,8 +89,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerUIPrefab: {fileID: 7544326777030513069, guid: b712cea22dc9649af920f15e12153153,
     type: 3}
-  casellaPlayer: {fileID: 1793708719397787443, guid: 220cfabd7698f4a5aa853fc9309e3be2,
-    type: 3}
+  casellaPlayer: {fileID: 0}
   mycam: {fileID: 6156395335725728843}
   myal: {fileID: 13384052029484486}
 --- !u!33 &2859786723110009134

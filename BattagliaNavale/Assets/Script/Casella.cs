@@ -130,7 +130,7 @@ public class Casella : MonoBehaviour, IPunObservable
         
     }
 
-    #region Mouse Functions
+    #region Mouse Icon
 
     //facciamo in modo che quando il Mouse passi sopra le caselle, esso divento un mirino
     private void OnMouseEnter()
@@ -145,7 +145,7 @@ public class Casella : MonoBehaviour, IPunObservable
 
     #endregion
 
-    #region OnMouse
+    #region OnMouse Function
 
     public void OnMouseDown()
     {
@@ -154,12 +154,12 @@ public class Casella : MonoBehaviour, IPunObservable
             //Posizionamento Nave
             if (GameController.startP1 == false && GameController.naviP1<10 && this.naveposizionataP1 == false && this.table == 1)
             {
-                //this.naveposizionataP1 = true;
                 GameController.naviP1 = GameController.naviP1 + 1;
-                Debug.Log("Giocatore 1 : ho posizionato una nave in riga " + this.riga + " e colonna " + this.colonna +
-                          " numero totale di navi : " + GameController.naviP1);
                 this.gameObject.GetComponent<MeshRenderer>().material = nave;
-                GameManager.PosizionamentoPlayer1(riga, colonna);
+                
+                PlayerManager.table1Player1[riga,colonna].PosizionaNaveP1();
+                GameManager.globalTable[riga,colonna].PosizionaNaveP1();
+               // Tavola.PosizionamentoPlayer1(riga, colonna);
             }
 
         }
@@ -169,12 +169,12 @@ public class Casella : MonoBehaviour, IPunObservable
             //Posizionamento Nave
             if (GameController.startP2 == false && GameController.naviP2<10 && this.naveposizionataP2 == false && this.table == 1)
             {
-                //this.naveposizionataP2 = true;
                 GameController.naviP2 = GameController.naviP2 + 1;
-                Debug.Log("Giocatore 2 : ho posizionato una nave in riga "+this.riga+" e colonna "+ this.colonna+" numero totale di navi : "+GameController.naviP2);
-                
                 this.gameObject.GetComponent<MeshRenderer>().material = nave;
-                GameManager.PosizionamentoPlayer2(riga, colonna);
+                
+                PlayerManagerP2.table1Player2[riga,colonna].PosizionaNaveP2();
+                GameManager.globalTable[riga,colonna].PosizionaNaveP2();
+               // Tavola.PosizionamentoPlayer2(riga, colonna);
             }
             
         }

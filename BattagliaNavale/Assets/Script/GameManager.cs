@@ -5,7 +5,7 @@ using Photon.Realtime;
 using System.IO;
 using System;
 
-public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
+public class GameManager : MonoBehaviourPunCallbacks
 {
     #region Public Fields
 
@@ -13,14 +13,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
     [Tooltip("Prefab da usare per istanziare le piattaforme di gioco")]
     GameObject playerPrefab;
     GameObject playerPrefab2;
-
-    //Dichiaro le 4 tavole di gioco
-    public static Casella[,] table1Player1 = new Casella[11,11];
-    public static Casella[,] table2Player1 = new Casella[11,11];
-    public static Casella[,] table1Player2 = new Casella[11,11];
-    public static Casella[,] table2Player2 = new Casella[11,11];
-   
-    
+    public static Casella[,] globalTable = new Casella[11,11];
     
     #endregion
 
@@ -105,21 +98,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
         #endregion
     }
 
-    #region Modifiche Tavole
 
-    public static void PosizionamentoPlayer1(int riga, int colonna)
-    {
-        table1Player1[riga,colonna].GetComponent<Casella>().PosizionaNaveP1();
-        table2Player2[riga, colonna].GetComponent<Casella>().PosizionaNaveP1();
-    }
-    
-    public static void PosizionamentoPlayer2(int riga, int colonna)
-    {
-        table1Player2[riga,colonna].GetComponent<Casella>().PosizionaNaveP2();
-        table2Player1[riga, colonna].GetComponent<Casella>().PosizionaNaveP2();
-    }
-
-    #endregion
     
 
     // Update is called once per frame
@@ -127,23 +106,5 @@ public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
     {
         
     }
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        if (stream.IsWriting)
-        {
-            // Possediamo questo giocatore: invia queste informazioni agli altri i nostri dati
-            stream.SendNext(table2Player1);
-            stream.SendNext(table2Player2);
-            stream.SendNext(table1Player1);
-            stream.SendNext(table1Player2);
-        }
-        else
-        {
-            //Lettore di rete, ricevi dati
-            GameManager.table1Player2 = (Casella[,])stream.ReceiveNext();
-            GameManager.table2Player2 = (Casella[,])stream.ReceiveNext();
-            GameManager.table1Player1 = (Casella[,])stream.ReceiveNext();
-            GameManager.table2Player1 = (Casella[,])stream.ReceiveNext();
-        }
-    }
+    
 }

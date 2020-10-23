@@ -87,8 +87,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a77a1296913354bb0b350ff4473acac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  casellaPlayer: {fileID: 1793708719397787443, guid: 2562175d6a3c1426b9ca6ed641dc8b3b,
-    type: 3}
   PlayerUIPrefab: {fileID: 7544326777030513069, guid: b712cea22dc9649af920f15e12153153,
     type: 3}
   mycam2: {fileID: 6902178268379988041}

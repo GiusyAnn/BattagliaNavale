@@ -9,9 +9,9 @@ public class PlayerManagerP2 : MonoBehaviourPun
     #region Public Fields
 
     public GameObject casellaPlayer;
-    Casella cas;
-    public Casella[][] globalTable;
-    int x, y;
+    
+    public static Casella[,] table1Player2 = new Casella[11,11];
+    public static Casella[,] table2Player2 = new Casella[11,11];
 
     [Tooltip("Istanza del giocatore Locale, per sapere se il giocatore è rappresentato nella scena")]
     public static GameObject LocalPlayerIstance2;
@@ -48,19 +48,16 @@ public class PlayerManagerP2 : MonoBehaviourPun
             if (!PhotonNetwork.IsMasterClient)
             {
                 //Istanziamo la Prima Tabella di Gioco
-                for (x = 1; x < 11; ++x)
+                for (int x = 1; x < 11; ++x)
                 {
-                    for (y = 1; y < 11; ++y)
+                    for (int y = 1; y < 11; ++y)
                     {
-
-                        Debug.LogFormat("Istanziamo la casella della 1 tavola in riga " + x + " e colonna " + y);
-
                         casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CasellaP2"),
                             new Vector3(700 + (x * 90), 1, -1050 + (y * 90)), Quaternion.identity, 0);
 
                         setCasella(casellaPlayer, x, y, 1);
                         
-                        GameManager.table1Player2[x, y] = casellaPlayer.GetComponent<Casella>();
+                        table1Player2[x, y] = casellaPlayer.GetComponent<Casella>();
                     }
                 }
 
@@ -71,14 +68,12 @@ public class PlayerManagerP2 : MonoBehaviourPun
                 {
                     for (int y = 1; y < 11; ++y)
                     {
-                        Debug.LogFormat("Istanziamo la casella della 2 tavola in riga " + x + " e colonna " + y);
-
                         casellaPlayer = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CasellaP2"),
                             new Vector3(700 + (x * 90), 1, 50 + (y * 90)), Quaternion.identity, 0);
 
                         setCasella(casellaPlayer, x, y, 2);
                         
-                        GameManager.table2Player2[x, y] = casellaPlayer.GetComponent<Casella>();
+                        table2Player2[x, y] = casellaPlayer.GetComponent<Casella>();
                    }
                 }
             }
@@ -124,6 +119,16 @@ public class PlayerManagerP2 : MonoBehaviourPun
         if (photonView.IsMine == false && PhotonNetwork.IsConnected == true)
         {
             return;
+        }
+        
+        for (int i = 1; i < 11; i++)
+        {
+            for (int j = 1; j < 11; j++)
+            {
+                //Verifichiamo se il secondo giocatore ha posizionato una nave
+                if(GameManager.globalTable[i,j].naveposizionataP1 != table2Player2[i,j].naveposizionataP1)
+                    table2Player2[i,j].PosizionaNaveP1();
+            }
         }
     }
 
