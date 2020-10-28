@@ -348,6 +348,7 @@
           <e p="PlayerManagerP2.cs" t="Include" />
           <e p="PlayerNameInputField.cs" t="Include" />
           <e p="PlayerUI.cs" t="Include" />
+          <e p="PosizionamentoUI.cs" t="Include" />
           <e p="Tavola.cs" t="Include" />
         </e>
       </e>

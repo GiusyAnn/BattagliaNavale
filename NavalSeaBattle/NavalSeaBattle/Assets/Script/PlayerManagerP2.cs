@@ -40,10 +40,10 @@ public class PlayerManagerP2 : MonoBehaviourPun
         pv = GetComponent<PhotonView>();
         if (pv.IsMine)
         {
-            #region Tavole di Gioco
-
             if (!PhotonNetwork.IsMasterClient)
             {
+                #region Tavole di Gioco
+                
                 //Istanziamo la Prima Tabella di Gioco
                 for (int x = 1; x < 11; ++x)
                 {
@@ -73,9 +73,9 @@ public class PlayerManagerP2 : MonoBehaviourPun
                         Tavola.table2Player2[x, y] = casellaPlayer.GetComponent<Casella>();
                    }
                 }
+                
+                #endregion 
             }
-
-            #endregion
         }
         else
         {
@@ -122,9 +122,8 @@ public class PlayerManagerP2 : MonoBehaviourPun
         {
             for (int j = 1; j < 11; j++)
             {
-                //Verifichiamo se il secondo giocatore ha posizionato una nave
-                if(GameController.globalTable[i,j].naveposizionataP1 != 
-                   Tavola.table2Player2[i,j].naveposizionataP1)
+                //Verifichiamo se il primo giocatore ha posizionato una nave
+                //if(GameController.globalTable[i,j].naveposizionataP1 != Tavola.table2Player2[i,j].naveposizionataP1)
                     Tavola.table2Player2[i,j].PosizionaNaveP1();
             }
         }

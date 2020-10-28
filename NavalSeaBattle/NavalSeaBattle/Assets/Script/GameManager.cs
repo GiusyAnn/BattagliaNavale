@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     [Tooltip("Prefab da usare per istanziare le piattaforme di gioco")]
     GameObject playerPrefab;
-    GameObject playerPrefab2;
-    
     
     #endregion
 
@@ -91,7 +89,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         else
         {
             // siamo in una stanza. genera un personaggio per il giocatore locale. viene sincronizzato utilizzando PhotonNetwork.Instantiate
-            playerPrefab2 = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlanePlayer2"), new Vector3(1200f, 0f, 0f), Quaternion.identity, 0);
+            playerPrefab = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlanePlayer2"), new Vector3(1200f, 0f, 0f), Quaternion.identity, 0);
             DontDestroyOnLoad(playerPrefab);
             
         }

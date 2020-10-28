@@ -13,7 +13,7 @@ public class Tavola : MonoBehaviour, IPunObservable
     public static Casella[,] table2Player1 = new Casella[11,11];
     public static Casella[,] table1Player2 = new Casella[11,11];
     public static Casella[,] table2Player2 = new Casella[11,11];
-
+    
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,6 @@ public class Tavola : MonoBehaviour, IPunObservable
             stream.SendNext(table2Player1);
             stream.SendNext(table2Player2);
             stream.SendNext(table1Player1);
-            stream.SendNext(table1Player2);
         }
         else
         {

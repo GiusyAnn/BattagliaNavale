@@ -31,6 +31,7 @@ public class PlayerManager : MonoBehaviourPun
     // Start is called before the first frame update
     void Start()
     {
+        //Istanzio L'interfaccia del Player1
         if (PlayerUIPrefab != null)
         {
             GameObject _uiGo = Instantiate(PlayerUIPrefab);
@@ -44,10 +45,12 @@ public class PlayerManager : MonoBehaviourPun
         pv = GetComponent<PhotonView>();
         if(pv.IsMine)
         {
-            #region Tavole di Gioco
+           
 
             if (PhotonNetwork.IsMasterClient)
             {
+                #region Tavole di Gioco
+                
                 //Istanziamo la Prima Tabella di Gioco
                 for (x = 1; x < 11; x++)
                 {
@@ -77,9 +80,9 @@ public class PlayerManager : MonoBehaviourPun
                         Tavola.table2Player1[x, y] = casellaPlayer.GetComponent<Casella>();
                    }
                 }
+                
+                #endregion
             }
-
-            #endregion
         }
         else
         {
@@ -120,15 +123,17 @@ public class PlayerManager : MonoBehaviourPun
         {
             return;
         }
-        
-        for (int i = 1; i < 11; i++)
+
+        if (PhotonNetwork.PlayerList.Length == 2)
         {
-            for (int j = 1; j < 11; j++)
+            for (int i = 1; i < 11; i++)
             {
-                //Verifichiamo se il secondo giocatore ha posizionato una nave
-                if(GameController.globalTable[i,j].naveposizionataP2 !=
-                   Tavola.table2Player1[i,j].naveposizionataP2)
-                    Tavola.table2Player1[i,j].PosizionaNaveP2();
+                for (int j = 1; j < 11; j++)
+                {
+                    //Verifichiamo se il secondo giocatore ha posizionato una nave
+                   // if(GameController.globalTable[i,j].naveposizionataP2 != Tavola.table2Player1[i,j].naveposizionataP2)
+                        Tavola.table2Player1[i,j].PosizionaNaveP2();
+                }
             }
         }
     }

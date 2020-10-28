@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿
 using Photon.Pun;
 using UnityEngine;
 
-public class Casella : MonoBehaviour, IPunObservable
+[RequireComponent(typeof(PhotonView))]
+public class Casella : MonoBehaviourPunCallbacks, IPunObservable
 {
 
     #region Public Fields
@@ -23,9 +22,16 @@ public class Casella : MonoBehaviour, IPunObservable
         public Texture2D mouse;
         public Material nave;
 
-    #endregion
+        private PhotonView pv;
+
+        #endregion
 
     #region Public Method
+
+    private void Awake()
+    {
+        pv = GetComponent<PhotonView>();
+    }
 
     public void SetTable(int num)
     {
@@ -149,40 +155,72 @@ public class Casella : MonoBehaviour, IPunObservable
 
     public void OnMouseDown()
     {
-        if (this.player == 1 && this.riga != 0 && this.colonna != 0)
-        {
-            //Posizionamento Nave
-            if (GameController.startP1 == false && GameController.naviP1<10 && this.naveposizionataP1 == false && this.table == 1)
+        #region Player1
+
+            //Operazioni del Giocatore 1
+            if (this.player == 1 )
             {
-                GameController.naviP1 = GameController.naviP1 + 1;
-                this.gameObject.GetComponent<MeshRenderer>().material = nave;
-                
-                Tavola.table1Player1[riga,colonna].PosizionaNaveP1();
-                GameController.globalTable[riga,colonna].PosizionaNaveP1();
-               // Tavola.PosizionamentoPlayer1(riga, colonna);
+                //Posizionamento Nave
+                if (GameController.naviP1 < 10 && this.naveposizionataP1 == false && this.table == 1)
+                {
+                    GameController.naviP1 = GameController.naviP1 + 1;
+                    this.gameObject.GetComponent<MeshRenderer>().material = nave;
+                    this.pv.RPC("PosizionaNaveP1",RpcTarget.All,riga,colonna);
+                }
+
+            }
+        
+        #endregion
+
+        #region Player2
+            //Operazioni del Giocatore 2
+            if (this.player == 2 )
+            {
+                //Posizionamento Nave 
+                if ( GameController.naviP2<10 && this.naveposizionataP2 == false && this.table == 1)
+                {
+                    GameController.naviP2 = GameController.naviP2 + 1;
+                    this.gameObject.GetComponent<MeshRenderer>().material = nave;
+                    this.pv.RPC("PosizionaNaveP2",RpcTarget.All,riga,colonna);
+                }
             }
 
-        }
-
-        if (this.player == 2 && this.riga != 0 && this.colonna != 0)
-        {
-            //Posizionamento Nave
-            if (GameController.startP2 == false && GameController.naviP2<10 && this.naveposizionataP2 == false && this.table == 1)
-            {
-                GameController.naviP2 = GameController.naviP2 + 1;
-                this.gameObject.GetComponent<MeshRenderer>().material = nave;
-                
-                Tavola.table1Player2[riga,colonna].PosizionaNaveP2();
-                GameController.globalTable[riga,colonna].PosizionaNaveP2();
-               // Tavola.PosizionamentoPlayer2(riga, colonna);
-            }
-            
-        }
+        #endregion
+        
     }
 
     #endregion
 
+    #region PunRPCMetods
+
+    //Il Player1 posiziona una nave
+    [PunRPC]
+    public void PosizionaNaveP1(int riga, int colonna)
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Tavola.table1Player1[riga,colonna].PosizionaNaveP1();
+        }
+        else
+        {
+            Tavola.table2Player2[riga,colonna].PosizionaNaveP1();
+        }
+    }
     
+    [PunRPC]
+    public void PosizionaNaveP2(int riga, int colonna)
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Tavola.table2Player1[riga,colonna].PosizionaNaveP1();
+        }
+        else
+        {
+            Tavola.table1Player2[riga,colonna].PosizionaNaveP1();
+        }
+    }
+
+    #endregion
     
     #region PhotonView Observer
 

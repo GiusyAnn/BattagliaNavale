@@ -39,8 +39,10 @@ MonoBehaviour:
   - Fire
   - RespawnSpaceship
   - setCasella
-  - PosizionamentoPlayer1
-  - PosizionamentoPlayer2
+  - gioco1
+  - gioco2
+  - PosizionaNaveP1
+  - PosizionaNaveP2 
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
