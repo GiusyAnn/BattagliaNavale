@@ -155,9 +155,9 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
 
     public void OnMouseDown()
     {
+        //Operazioni del Giocatore 1
         #region Player1
-
-            //Operazioni del Giocatore 1
+        
             if (this.player == 1 )
             {
                 //Posizionamento Nave
@@ -167,13 +167,13 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
                     this.gameObject.GetComponent<MeshRenderer>().material = nave;
                     this.pv.RPC("PosizionaNaveP1",RpcTarget.All,riga,colonna);
                 }
-
             }
         
         #endregion
 
+        //Operazioni del Giocatore 2
         #region Player2
-            //Operazioni del Giocatore 2
+           
             if (this.player == 2 )
             {
                 //Posizionamento Nave 
@@ -193,32 +193,42 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
 
     #region PunRPCMetods
 
-    //Il Player1 posiziona una nave
-    [PunRPC]
-    public void PosizionaNaveP1(int riga, int colonna)
-    {
-        if (PhotonNetwork.IsMasterClient)
+    #region Posizionamento e Rimozione di una Nave
+
+        //Il Player1 posiziona una nave
+        [PunRPC]
+        public void PosizionaNaveP1(int riga, int colonna)
         {
-            Tavola.table1Player1[riga,colonna].PosizionaNaveP1();
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Tavola.table1Player1[riga,colonna].PosizionaNaveP1();
+            }
+            else
+            {
+                Tavola.table2Player2[riga,colonna].PosizionaNaveP1();
+            }
         }
-        else
+        
+        //Il Player 2 Posizona una nave
+        [PunRPC]
+        public void PosizionaNaveP2(int riga, int colonna)
         {
-            Tavola.table2Player2[riga,colonna].PosizionaNaveP1();
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Tavola.table2Player1[riga,colonna].PosizionaNaveP2();
+            }
+            else
+            {
+                Tavola.table1Player2[riga,colonna].PosizionaNaveP2();
+            }
         }
-    }
+        
+        //Il Player 1 Rimuove una Nave
+        
+        //Il Player 2 Rimuove una Nave
     
-    [PunRPC]
-    public void PosizionaNaveP2(int riga, int colonna)
-    {
-        if (PhotonNetwork.IsMasterClient)
-        {
-            Tavola.table2Player1[riga,colonna].PosizionaNaveP1();
-        }
-        else
-        {
-            Tavola.table1Player2[riga,colonna].PosizionaNaveP1();
-        }
-    }
+
+    #endregion
 
     #endregion
     

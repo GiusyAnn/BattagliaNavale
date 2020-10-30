@@ -12,6 +12,7 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
 
         public static int naviP1 = 0;
         public static int naviP2 = 0;
+        public static int numeroTurno = 1;
         public  bool startP1 = false;
         public  bool startP2 = false;
         public  bool iniziogioco = false;
@@ -47,6 +48,7 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
         Debug.Log("Ho avviato la funzione INIZIO GIOCO 1, il valore di startP1 è : "+startP1+ "  P2StartP1 : "+startP2);
     }
     
+    //Il Player2 è pronto e setta a true il suo booleano
     [PunRPC]
     public  void gioco2(bool si)
     {
@@ -75,13 +77,16 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
             {
                 //entremabi i giocatori hanno cliccato su "Gioca" quindi sono pronti ad iniziare
                 iniziogioco = true;
-                //settiamo a true il primo turno, e a false il secondo e così via... 
+                
+                //settiamo a true il primo turno in modo che indichi il turno del Player 1,
+                //e a false il secondo turno in modo che indichi il turno del Player2 e così via... 
                 turno = true;
             }
             
+            //Il gioco è iniziato, rimuoviamo il menù di preparazione e teniamo traccia del turno corrente.
             if (iniziogioco == true)
             {
-                this.posizionanavi.GetComponent<Canvas> ().enabled = false;
+                //posizionanavi.GetComponent<Canvas> ().enabled = false;
             }
         }
         else
@@ -90,13 +95,15 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
             {
                 //entremabi i giocatori hanno cliccato su "Gioca" quindi sono pronti ad iniziare
                 iniziogioco = true;
-                //settiamo a true il primo turno, e a false il secondo e così via... 
+                
+                //settiamo a true il primo turno in modo che indichi il turno del Player 1,
+                //e a false il secondo turno in modo che indichi il turno del Player2 e così via... 
                 turno = true;
             }
             
             if (iniziogioco == true)
             {
-                posizionanavi.GetComponent<Canvas> ().enabled = false;
+                //posizionanavi.GetComponent<Canvas> ().enabled = false;
             }
         }
     }

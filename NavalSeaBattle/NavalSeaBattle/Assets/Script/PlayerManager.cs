@@ -8,23 +8,20 @@ public class PlayerManager : MonoBehaviourPun
 
     #region Public Fields
 
-    [Tooltip("Prefabricato del UI del giocatore")]
-    [SerializeField]
-    public GameObject PlayerUIPrefab;
+        [Tooltip("Prefabricato del UI del giocatore")]
+        [SerializeField]
+        public GameObject PlayerUIPrefab;
 
-    public GameObject casellaPlayer;
+        public GameObject casellaPlayer;
 
-    public Camera mycam;
-    public AudioListener myal;
-    
-    
-    PhotonView pv;
-    int x, y;
-    
-    [Tooltip("Istanza del giocatore Locale, per sapere se il giocatore è rappresentato nella scena")]
-    public static GameObject LocalPlayerIstance;
-
-    
+        public Camera mycam;
+        public AudioListener myal;
+        
+        PhotonView pv;
+        int x, y;
+        
+        [Tooltip("Istanza del giocatore Locale, per sapere se il giocatore è rappresentato nella scena")]
+        public static GameObject LocalPlayerIstance;
 
     #endregion
 
@@ -45,8 +42,6 @@ public class PlayerManager : MonoBehaviourPun
         pv = GetComponent<PhotonView>();
         if(pv.IsMine)
         {
-           
-
             if (PhotonNetwork.IsMasterClient)
             {
                 #region Tavole di Gioco
@@ -86,6 +81,7 @@ public class PlayerManager : MonoBehaviourPun
         }
         else
         {
+            //Facciamo in modo che il Player utilizzi la Camera che ha istanziato come figlio
             Destroy(mycam);
             Destroy(myal);
         }
@@ -99,7 +95,6 @@ public class PlayerManager : MonoBehaviourPun
         casellaPlayer.GetComponent<Casella>().SetColonna(y);
         casellaPlayer.GetComponent<Casella>().SetTable(numtable);
         casellaPlayer.GetComponent<Casella>().SetPlayerTable(1);
-        
     }
 
     void Awake()
@@ -124,28 +119,11 @@ public class PlayerManager : MonoBehaviourPun
             return;
         }
 
-        if (PhotonNetwork.PlayerList.Length == 2)
-        {
-            for (int i = 1; i < 11; i++)
-            {
-                for (int j = 1; j < 11; j++)
-                {
-                    //Verifichiamo se il secondo giocatore ha posizionato una nave
-                   // if(GameController.globalTable[i,j].naveposizionataP2 != Tavola.table2Player1[i,j].naveposizionataP2)
-                        Tavola.table2Player1[i,j].PosizionaNaveP2();
-                }
-            }
-        }
     }
 
     void CalledOnLevelWasLoaded(int level)
     {
-        // check if we are outside the Arena and if it's the case, spawn around the center of the arena in a safe zone
-        if (!Physics.Raycast(transform.position, -Vector3.up, 5f))
-        {
-            transform.position = new Vector3(0f, 0f, 0f);
-        }
-
+        //Settiamo il NickName sull'interfaccia
         GameObject _uiGo = Instantiate(this.PlayerUIPrefab);
         _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
     }

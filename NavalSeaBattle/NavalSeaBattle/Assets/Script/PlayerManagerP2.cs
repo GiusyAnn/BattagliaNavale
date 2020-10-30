@@ -8,25 +8,26 @@ public class PlayerManagerP2 : MonoBehaviourPun
 
     #region Public Fields
 
-    public GameObject casellaPlayer;
-    
-    [Tooltip("Istanza del giocatore Locale, per sapere se il giocatore è rappresentato nella scena")]
-    public static GameObject LocalPlayerIstance2;
+        public GameObject casellaPlayer;
+        
+        [Tooltip("Istanza del giocatore Locale, per sapere se il giocatore è rappresentato nella scena")]
+        public static GameObject LocalPlayerIstance2;
 
-    [Tooltip("Prefabricato del UI del giocatore")]
-    [SerializeField]
-    public GameObject PlayerUIPrefab;
+        [Tooltip("Prefabricato del UI del giocatore")]
+        [SerializeField]
+        public GameObject PlayerUIPrefab;
 
-    public Camera mycam2;
-    public AudioListener myal2;
-    
-    PhotonView pv;
+        public Camera mycam2;
+        public AudioListener myal2;
+        
+        PhotonView pv;
 
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
+        //Istanzio L'interfaccia del Player2
         if (PlayerUIPrefab != null)
         {
             GameObject _uiGo = Instantiate(PlayerUIPrefab);
@@ -79,6 +80,7 @@ public class PlayerManagerP2 : MonoBehaviourPun
         }
         else
         {
+            //Facciamo in modo che il Player utilizzi la Camera che ha istanziato come figlio
             Destroy(myal2);
             Destroy(mycam2);
         }
@@ -117,26 +119,11 @@ public class PlayerManagerP2 : MonoBehaviourPun
         {
             return;
         }
-        
-        for (int i = 1; i < 11; i++)
-        {
-            for (int j = 1; j < 11; j++)
-            {
-                //Verifichiamo se il primo giocatore ha posizionato una nave
-                //if(GameController.globalTable[i,j].naveposizionataP1 != Tavola.table2Player2[i,j].naveposizionataP1)
-                    Tavola.table2Player2[i,j].PosizionaNaveP1();
-            }
-        }
     }
 
     void CalledOnLevelWasLoaded(int level)
     {
-        // check if we are outside the Arena and if it's the case, spawn around the center of the arena in a safe zone
-        if (!Physics.Raycast(transform.position, -Vector3.up, 5f))
-        {
-            transform.position = new Vector3(0f, 0f, 0f);
-        }
-
+        //Settiamo il NickName sull'interfaccia
         GameObject _uiGo = Instantiate(this.PlayerUIPrefab);
         _uiGo.SendMessage("SetTarget2", this, SendMessageOptions.RequireReceiver);
     }

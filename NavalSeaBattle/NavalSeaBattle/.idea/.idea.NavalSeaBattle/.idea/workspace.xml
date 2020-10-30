@@ -20,67 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee925c64-3d72-4d77-933a-7b262e0e7254" name="Default Changelist" comment="Change file">
-      <change afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/PosizionamentoUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/PosizionamentoUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/Plane.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/Plane.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/PlanePlayer2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/PlanePlayer2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room for 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room for 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room for 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room for 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Casella.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Casella.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerManagerP2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerManagerP2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PosizionamentoUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PosizionamentoUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Tavola.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Tavola.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1a/1a36193dce8e552839d8f5c423eb39d0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/20/20620edf9d0f914b13ad8966f117b4aa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5c/5c33b3828715961d08498f62e015a15b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/74/7476f7585ff91d13ff1cae1ddb20f009" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/81/81f4238af61c80c1b85605f778ea692a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/aa/aa061c904117ff98747e198d9ec39ad5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b0/b02d61a035c8461b53bd3d08fe5fd65d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b0/b07f8f3a97b11a40a62e8d2705c22317" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cd/cd21783cacbede87572ca7c14961036b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5d/5d6ce0532eaa9f3c516b1aae68a9bb48" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/89/8962abdbca0dccb8b520a4102456c4b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9f/9f46b7065ddadb61e13b3f1ebf153932" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/aa/aa3975b5368077ed0068a9242c944ebb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ca/ca6a895519646d128a8ac83bc4b7d0a4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f9/f9b7122b759f98bba8fe7d167862c21f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Unity.Timeline.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets1.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets1.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets2.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets2.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/ScriptsOnlyCache.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,14 +68,14 @@
         <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs" />
         <option value="$USER_HOME$/Unity Projects/NavalSeaBattleProva/Assets/Script/PosizionamentoUI.cs" />
         <option value="$USER_HOME$/Unity Projects/NavalSeaBattleProva/Assets/Script/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PosizionamentoUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Tavola.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerManagerP2.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Casella.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PosizionamentoUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" />
       </list>
     </option>
   </component>
@@ -188,7 +154,8 @@
       <workItem from="1603829771384" duration="1354000" />
       <workItem from="1603874912171" duration="1771000" />
       <workItem from="1603878169166" duration="2432000" />
-      <workItem from="1603892612190" duration="681000" />
+      <workItem from="1603892612190" duration="914000" />
+      <workItem from="1604053470292" duration="4097000" />
     </task>
     <task id="LOCAL-00001" summary="Change">
       <created>1603446233615</created>
@@ -268,13 +235,13 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="504" y="192" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1603446223122" />
-    <state x="351" y="82" width="825" height="735" key="find.popup" timestamp="1603893123728">
+    <state x="351" y="82" width="825" height="735" key="find.popup" timestamp="1603893336391">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="351" y="82" width="825" height="735" key="find.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1603893123728" />
-    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1603729994379">
+    <state x="351" y="82" width="825" height="735" key="find.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1603893336391" />
+    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1604055998390">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1603729994379" />
+    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604055998390" />
   </component>
 </project>
