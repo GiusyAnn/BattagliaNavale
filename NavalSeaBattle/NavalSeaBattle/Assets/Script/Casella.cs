@@ -14,13 +14,17 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
         public bool colpitaP1;
         public bool naveposizionataP2;
         public bool colpitaP2;
-        public bool affondatadaP1;
-        public bool affondatadaP2;
+        public bool p2affondaP1;
+        public bool p1affondaP2;
         public int player;
-
+        
         public Texture2D mirino;
         public Texture2D mouse;
         public Material nave;
+        public Material casella1;
+        public Material casella2;
+        public Material colpita;
+        public Material affondata;
 
         private PhotonView pv;
 
@@ -100,22 +104,22 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
 
     public void AffondaP1()
     {
-        this.affondatadaP1 = true;
+        this.p2affondaP1 = true;
     }
 
     public bool IsAffondataP1()
     {
-        return affondatadaP1;
+        return p2affondaP1;
     }
 
     public void AffondaP2()
     {
-        this.affondatadaP2 = true;
+        this.p1affondaP2 = true;
     }
 
     public bool IsAffondataP2()
     {
-        return affondatadaP2;
+        return p1affondaP2;
     }
 
     public void SetPlayerTable (int num)
@@ -133,25 +137,49 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
     // Update is called once per frame
     void Update()
     {
-        
+        //Modifichiamo l'aspetto delle caselle del Player1 nel caso esse vangano colpite e/o affondate
+        if (table == 1 && player == 1)
+        {
+            if (p2affondaP1 && colpitaP1)
+            {
+                this.gameObject.GetComponent<MeshRenderer>().material = affondata;
+            } else if(colpitaP1)
+            {
+                this.gameObject.GetComponent<MeshRenderer>().material = colpita;
+            }
+        }
+
+        //Modifichiamo l'aspetto delle caselle del Player2 nel caso esse vangano colpite e/o affondate
+        if (table == 1 && player == 2)
+        {
+            if (p1affondaP2 && colpitaP2)
+            {
+                this.gameObject.GetComponent<MeshRenderer>().material = affondata;
+            } else if (colpitaP2)
+            {
+                this.gameObject.GetComponent<MeshRenderer>().material = colpita;
+            }
+        }
     }
 
-    #region Mouse Icon
-
-    //facciamo in modo che quando il Mouse passi sopra le caselle, esso divento un mirino
-    private void OnMouseEnter()
-    {
-        Cursor.SetCursor(mirino, Vector2.zero, CursorMode.Auto);
-    }
-
-    private void OnMouseExit()
-    {
-        Cursor.SetCursor(mouse, Vector2.zero, CursorMode.Auto);
-    }
-
-    #endregion
+ 
 
     #region OnMouse Function
+    
+        #region Mouse Icon
+
+            //facciamo in modo che quando il Mouse passi sopra le caselle, esso divento un mirino
+            private void OnMouseEnter()
+            {
+                Cursor.SetCursor(mirino, Vector2.zero, CursorMode.Auto);
+            }
+
+            private void OnMouseExit()
+            {
+                Cursor.SetCursor(mouse, Vector2.zero, CursorMode.Auto);
+            }
+
+        #endregion
 
     public void OnMouseDown()
     {
@@ -167,6 +195,28 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
                     this.gameObject.GetComponent<MeshRenderer>().material = nave;
                     this.pv.RPC("PosizionaNaveP1",RpcTarget.All,riga,colonna);
                 }
+                
+                //ProvaColpo
+                if ( this.table == 2 && GameController.iniziogioco && GameController.turnoPub)
+                {
+                    //controllo se nella casella dove sto colpendo l'avversario ha posizionato una nave
+                    if (naveposizionataP2)
+                    {
+                        this.gameObject.GetComponent<MeshRenderer>().material = affondata;
+                        //devo effettuare le modifiche per il numero di navi e il turno
+                        this.pv.RPC("p1affondanavedip2",RpcTarget.All,riga,colonna);
+                        GameController.numeroTurnoPub = GameController.numeroTurnoPub + 1;
+                        GameController.turnoPub = false;
+                    }
+                    else
+                    {
+                        this.gameObject.GetComponent<MeshRenderer>().material = colpita;
+                        //devo effettuare le modifiche per il turno
+                        this.pv.RPC("p1ColpisceCasellaP2",RpcTarget.All,riga,colonna);
+                        GameController.numeroTurnoPub = GameController.numeroTurnoPub + 1;
+                        GameController.turnoPub = false;
+                    }
+                }
             }
         
         #endregion
@@ -177,11 +227,33 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
             if (this.player == 2 )
             {
                 //Posizionamento Nave 
-                if ( GameController.naviP2<10 && this.naveposizionataP2 == false && this.table == 1)
+                if ( GameController.naviP2<10 && this.naveposizionataP2 == false && this.table == 1 && GameController.iniziogioco == false)
                 {
                     GameController.naviP2 = GameController.naviP2 + 1;
                     this.gameObject.GetComponent<MeshRenderer>().material = nave;
                     this.pv.RPC("PosizionaNaveP2",RpcTarget.All,riga,colonna);
+                }
+                
+                //ProvaColpo
+                if ( this.table == 2 && GameController.turnoPub == false && GameController.iniziogioco)
+                {
+                    //controllo se nella casella dove sto colpendo l'avversario ha posizionato una nave
+                    if (naveposizionataP1)
+                    {
+                        this.gameObject.GetComponent<MeshRenderer>().material = affondata;
+                        //devo effettuare le modifiche per il numero di navi e il turno
+                        this.pv.RPC("p2affondanavedip1",RpcTarget.All,riga,colonna);
+                        GameController.numeroTurnoPub = GameController.numeroTurnoPub + 1;
+                        GameController.turnoPub = true;
+                    }
+                    else
+                    {
+                        this.gameObject.GetComponent<MeshRenderer>().material = colpita;
+                        //devo effettuare le modifiche per il turno
+                        this.pv.RPC("p2ColpisceCasellaP1",RpcTarget.All,riga,colonna);
+                        GameController.numeroTurnoPub = GameController.numeroTurnoPub + 1;
+                        GameController.turnoPub = true;
+                    }
                 }
             }
 
@@ -222,16 +294,74 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
                 Tavola.table1Player2[riga,colonna].PosizionaNaveP2();
             }
         }
+        #endregion
+
+        #region Colpisci e/o Affonda
+
+        //Il Player 1 Affonda una Nave del Player2
+        [PunRPC]
+        public void p1affondanavedip2(int riga, int colonna)
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Tavola.table2Player1[riga,colonna].AffondaP2();
+                Tavola.table2Player1[riga,colonna].ColpisciP2();
+            }
+            else
+            {
+                Tavola.table1Player2[riga,colonna].AffondaP2();
+                Tavola.table1Player2[riga,colonna].ColpisciP2();
+            }
+        }
         
-        //Il Player 1 Rimuove una Nave
+        //Il Player 2 Affonda una Nave del Player1
+        [PunRPC]
+        public void p2affondanavedip1(int riga, int colonna)
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Tavola.table1Player1[riga,colonna].AffondaP1();
+                Tavola.table1Player1[riga,colonna].ColpisciP1();
+            }
+            else
+            {
+                Tavola.table2Player2[riga,colonna].AffondaP1();
+                Tavola.table2Player2[riga,colonna].ColpisciP1();
+            }
+        }
         
-        //Il Player 2 Rimuove una Nave
-    
+        //Il Player 1 Colpisce
+        [PunRPC]
+        public void p1ColpisceCasellaP2(int riga, int colonna)
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Tavola.table2Player1[riga,colonna].ColpisciP2();
+            }
+            else
+            {
+                Tavola.table1Player2[riga,colonna].ColpisciP2();
+            }
+        }
+        
+        //Il Player 2 Colpisce 
+        [PunRPC]
+        public void p2ColpisceCasellaP1(int riga, int colonna)
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Tavola.table1Player1[riga,colonna].ColpisciP1();
+            }
+            else
+            {
+                Tavola.table2Player2[riga,colonna].ColpisciP1();
+            }
+        }
 
     #endregion
 
     #endregion
-    
+
     #region PhotonView Observer
 
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -246,8 +376,8 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
                 stream.SendNext(naveposizionataP2);
                 stream.SendNext(colpitaP1);
                 stream.SendNext(colpitaP2);
-                stream.SendNext(affondatadaP1);
-                stream.SendNext(affondatadaP2);
+                stream.SendNext(p1affondaP2);
+                stream.SendNext(p2affondaP1);
                 stream.SendNext(player);
             }
             else
@@ -260,8 +390,8 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
                 this.naveposizionataP2 = (bool)stream.ReceiveNext();
                 this.colpitaP1 = (bool)stream.ReceiveNext();
                 this.colpitaP2 = (bool)stream.ReceiveNext();
-                this.affondatadaP1 = (bool)stream.ReceiveNext();
-                this.affondatadaP2 = (bool)stream.ReceiveNext();
+                this.p1affondaP2 = (bool)stream.ReceiveNext();
+                this.p1affondaP2 = (bool)stream.ReceiveNext();
                 this.player = (int)stream.ReceiveNext();
             }
         }

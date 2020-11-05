@@ -87,9 +87,8 @@ public class PosizionamentoUI : MonoBehaviour
                 }
             }
         }
-        
-    
-    #endregion
+
+        #endregion
     
    
 

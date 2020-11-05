@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     [Tooltip("Prefab da usare per istanziare le piattaforme di gioco")]
     GameObject playerPrefab;
+
+    public  Canvas menu;
     
     #endregion
 
@@ -96,13 +98,16 @@ public class GameManager : MonoBehaviourPunCallbacks
         #endregion
     }
 
-
-    
-
     // Update is called once per frame
     void Update()
     {
-        
+        if (PhotonNetwork.PlayerList.Length == 2)
+        {
+            if (GameController.iniziogioco ) 
+            {
+                menu.GetComponent<Canvas>().enabled = false;
+            }
+        }
     }
     
 }

@@ -41,8 +41,14 @@ MonoBehaviour:
   - setCasella
   - gioco1
   - gioco2
+  - setTurnoP1
+  - setTurnoP2
   - PosizionaNaveP1
-  - PosizionaNaveP2 
+  - PosizionaNaveP2
+  - p1affondanavedip2
+  - p1ColpisceCasellaP2
+  - p2affondanavedip1
+  - p2ColpisceCasellaP1
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

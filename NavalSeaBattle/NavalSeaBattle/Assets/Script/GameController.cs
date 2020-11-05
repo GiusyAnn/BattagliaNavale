@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.ThirdPerson.PunDemos;
 
 [RequireComponent(typeof(PhotonView))]
 public class GameController : MonoBehaviourPunCallbacks, IPunObservable
@@ -12,13 +13,15 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
 
         public static int naviP1 = 0;
         public static int naviP2 = 0;
-        public static int numeroTurno = 1;
         public  bool startP1 = false;
         public  bool startP2 = false;
-        public  bool iniziogioco = false;
-        public  bool turno;
-        public Canvas posizionanavi;
-
+        public static bool iniziogioco = false;
+        
+        public  int numeroTurno = 1;
+        public static int numeroTurnoPub = 1;
+        public static bool turnoPub = true;
+        public bool turno = true;
+        
         private PhotonView pv;
 
         #endregion
@@ -34,9 +37,27 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
         startP1 = false;
         startP2 = false;
         iniziogioco = false;
+        turno = true;
+        turnoPub = turno;
+        numeroTurno = 1;
+        numeroTurnoPub = numeroTurno;
     }
 
-   
+    //Risetto i parametri iniziali nel caso il gioco venga riavviato
+    public void Awake()
+    {
+        pv = GetComponentInParent<PhotonView>();
+        Debug.LogWarning("AWAKE! Ho Creato il GameController la sua PhotonView é : " + pv);
+        naviP1 = 0;
+        naviP2 = 0;
+        startP1 = false;
+        startP2 = false;
+        iniziogioco = false;
+        turno = true;
+        turnoPub = turno;
+        numeroTurno = 1;
+        numeroTurnoPub = numeroTurno;
+    }
 
     #region PunRPC Metods
 
@@ -55,7 +76,25 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
         this.startP2 = si;
         Debug.Log("Ho avviato la funzione INIZIO GIOCO 2, il valore di startP1 è : "+startP1+ "  P2StartP1 : "+startP2); 
     }
+    
+    //Setto il turno per il Player1
+    [PunRPC]
+    public void setTurnoP1()
+    {
+        this.turno = true;
+        this.numeroTurno = this.numeroTurno + 1;
+        Debug.LogWarning("SONO NALLA PUN: il turno PUN è "+ turno+" "+numeroTurno);
+    }
 
+    //Setto il turno per il Player2
+    [PunRPC]
+    public void setTurnoP2()
+    {
+        this.turno = false;
+        this.numeroTurno = this.numeroTurno + 1;
+        Debug.LogWarning("SONO NALLA PUN:il turno PUN è "+ turno+" "+numeroTurno);
+    }
+    
     #endregion
 
     public void setgioco1()
@@ -67,26 +106,43 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
     {
         pv.RPC("gioco2",RpcTarget.All, true);
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        if (PhotonNetwork.IsMasterClient)
+
+           if (PhotonNetwork.IsMasterClient)
         {
             if (startP1 == true && startP2 == true)
             {
                 //entremabi i giocatori hanno cliccato su "Gioca" quindi sono pronti ad iniziare
                 iniziogioco = true;
-                
-                //settiamo a true il primo turno in modo che indichi il turno del Player 1,
-                //e a false il secondo turno in modo che indichi il turno del Player2 e così via... 
-                turno = true;
             }
             
-            //Il gioco è iniziato, rimuoviamo il menù di preparazione e teniamo traccia del turno corrente.
-            if (iniziogioco == true)
+            //SINCRONIZZO I TURNI DEI GIOCATORI
+            //quando un giocaore ha giocato, ha modificato la sua variabile publica di turno, quindi risulterà diversa da qualle locale condivisa con PUN
+            if (numeroTurno < numeroTurnoPub)
             {
-                //posizionanavi.GetComponent<Canvas> ().enabled = false;
+                //a seconda del numero del tunrno scopro se è il turno del giocatore 1 o quello del giocatore 2, e mi chiamo la funzione PunRPC
+                int res = numeroTurnoPub % 2;
+                if (res == 0)
+                {
+                    pv.RPC("setTurnoP2", RpcTarget.All);
+                    numeroTurnoPub = numeroTurno;
+                    turnoPub = turno;
+                }
+                else
+                {
+                    pv.RPC("setTurnoP1", RpcTarget.All);
+                    numeroTurnoPub = numeroTurno;
+                    turnoPub = turno;
+                }
+            }
+            else if (numeroTurnoPub < numeroTurno)
+            {
+                //Se l'altro giocatore ha modificato il turno, la variabile locale PUN sarà diversa, quindi setto i miei valori uguali e aggiorno il turno
+                numeroTurnoPub = numeroTurno;
+                turnoPub = turno;
             }
         }
         else
@@ -95,15 +151,32 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
             {
                 //entremabi i giocatori hanno cliccato su "Gioca" quindi sono pronti ad iniziare
                 iniziogioco = true;
-                
-                //settiamo a true il primo turno in modo che indichi il turno del Player 1,
-                //e a false il secondo turno in modo che indichi il turno del Player2 e così via... 
-                turno = true;
             }
             
-            if (iniziogioco == true)
+            //SINCRONIZZO I TURNI DEI GIOCATORI
+            //quando un giocaore ha giocato, ha modificato la sua variabile publica di turno, quindi risulterà diversa da qualle locale condivisa con PUN
+            if (numeroTurno < numeroTurnoPub)
             {
-                //posizionanavi.GetComponent<Canvas> ().enabled = false;
+                //a seconda del numero del tunrno scopro se è il turno del giocatore 1 o quello del giocatore 2, e mi chiamo la funzione PunRPC
+                int res = numeroTurnoPub % 2;
+                if (res == 0)
+                {
+                    pv.RPC("setTurnoP2", RpcTarget.All);
+                    numeroTurnoPub = numeroTurno;
+                    turnoPub = turno;
+                }
+                else
+                {
+                    pv.RPC("setTurnoP1", RpcTarget.All);
+                    numeroTurnoPub = numeroTurno;
+                    turnoPub = turno;
+                }
+            }
+            else if (numeroTurnoPub < numeroTurno)
+            {
+                //Se l'altro giocatore ha modificato il turno, la variabile locale PUN sarà diversa, quindi setto i miei valori uguali e aggiorno il turno
+                numeroTurnoPub = numeroTurno;
+                turnoPub = turno;
             }
         }
     }
@@ -118,7 +191,6 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
             stream.SendNext(startP1);
             stream.SendNext(startP2);
             stream.SendNext(iniziogioco);
-            stream.SendNext(turno);
         }
         else
         {
@@ -128,7 +200,8 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
             startP1 = (bool)stream.ReceiveNext();
             startP2 = (bool)stream.ReceiveNext();
             iniziogioco = (bool)stream.ReceiveNext();
-            turno = (bool)stream.ReceiveNext();
         }
-    } 
+    }
+
+   
 }

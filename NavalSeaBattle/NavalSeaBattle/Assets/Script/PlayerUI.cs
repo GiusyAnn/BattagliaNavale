@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,13 +18,16 @@ public class PlayerUI : MonoBehaviour
     private Text playerNameText2;
 
 
-    [Tooltip("UI Slider per la salute del giocatore")]
+    [Tooltip("UI Slider per la salute del Player1")]
     [SerializeField]
-    private Slider playerHealthSlider;
+    private Slider player1Slider;
+    
+    [Tooltip("UI Slider per la salute del Player2")]
+    [SerializeField]
+    private Slider player2Slider;
 
     private PlayerManager target;
     private PlayerManagerP2 target2;
-
 
     #endregion
 
@@ -32,18 +36,13 @@ public class PlayerUI : MonoBehaviour
 
     void Update()
     {
+
         // Referenza alla salute del Player
-        if (playerHealthSlider != null)
+        if (player1Slider != null)
         {
             //playerHealthSlider.value = target.Health;
         }
 
-        //Distruggi l'oggetto se il targher è vuoto
-       /* if (target == null)
-        {
-            Destroy(this.gameObject);
-            return;
-        }*/
     }
 
      void Awake()

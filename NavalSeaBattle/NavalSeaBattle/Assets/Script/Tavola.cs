@@ -24,7 +24,6 @@ public class Tavola : MonoBehaviour, IPunObservable
     // Update is called once per frame
     void Update()
     {
-        
         if (PhotonNetwork.PlayerList.Length == 2)
         {
             //Controllo se il Player2 ha posizionato una nave, e modifico anche la mia tavola
@@ -32,19 +31,43 @@ public class Tavola : MonoBehaviour, IPunObservable
             {
                 for (int j = 1; j < 11; j++)
                 {
-                    //Player1 - Posizoionamento Nave
-                    //Controllo se i valori coincidono
-                    if (Tavola.table1Player2[i, j].naveposizionataP2 !=
-                        Tavola.table2Player1[i, j].naveposizionataP2)
-                    {
-                        //Controllo se il Player2 ha posizonato una nave e l'aggiungo anche al Player1
-                        if(Tavola.table1Player2[i,j].naveposizionataP2)
-                            Tavola.table2Player1[i,j].PosizionaNaveP2();
+                    #region Player1
+
+                        //Posizoionamento Nave - Controllo se i valori coincidono
+                        if (Tavola.table1Player2[i, j].naveposizionataP2 !=
+                            Tavola.table2Player1[i, j].naveposizionataP2)
+                        {
+                            //Controllo se il Player2 ha posizonato una nave e l'aggiungo anche al Player1
+                            if(Tavola.table1Player2[i,j].naveposizionataP2)
+                                Tavola.table2Player1[i,j].PosizionaNaveP2();
+                        }
                         
-                    }
-                    
-                    //Player2 - Posizonamento Nave
-                    //Controllo se i valori coincidono
+                        //Controllo se qualche mia nave è stata affondata
+                        if (Tavola.table2Player2[i, j].p2affondaP1 !=
+                            Tavola.table1Player1[i, j].p2affondaP1)
+                        {
+                            //Controllo se il Player2 ha posizonato una nave e l'aggiungo anche al Player1
+                            if (Tavola.table2Player2[i, j].p2affondaP1)
+                            {
+                                Tavola.table1Player1[i, j].p2affondaP1 = true;
+                                Tavola.table1Player1[i, j].colpitaP1 = true;
+                            }
+                        }
+                        
+                        //Controllo se qualche mia casella è stata colpita
+                        if (Tavola.table2Player2[i, j].colpitaP1 !=
+                            Tavola.table1Player1[i, j].colpitaP1)
+                        {
+                            //Controllo se il Player2 ha posizonato una nave e l'aggiungo anche al Player1
+                            if (Tavola.table2Player2[i, j].colpitaP1)
+                                Tavola.table1Player1[i, j].colpitaP1 = true;
+                        }
+
+                    #endregion
+
+                    #region Player2 
+
+                    //Posizonamento Nave - Controllo se i valori coincidono
                     if (Tavola.table1Player1[i, j].naveposizionataP1 !=
                         Tavola.table2Player2[i, j].naveposizionataP1)
                     {
@@ -53,14 +76,36 @@ public class Tavola : MonoBehaviour, IPunObservable
                             Tavola.table1Player2[i,j].PosizionaNaveP1();
                         
                     }
+                    
+                    //Controllo se qualche mia nave è stata affondata
+                    if (Tavola.table2Player1[i, j].p1affondaP2 !=
+                        Tavola.table1Player2[i, j].p1affondaP2)
+                    {
+                        //Controllo se il Player2 ha posizonato una nave e l'aggiungo anche al Player1
+                        if (Tavola.table2Player1[i, j].p1affondaP2)
+                        {
+                            Tavola.table1Player2[i, j].p1affondaP2 = true;
+                            Tavola.table1Player2[i, j].colpitaP2 = true;
+                        }
+                    }
+                        
+                    //Controllo se qualche mia casella è stata colpita
+                    if (Tavola.table2Player1[i, j].colpitaP2 !=
+                        Tavola.table1Player2[i, j].colpitaP2)
+                    {
+                        //Controllo se il Player2 ha posizonato una nave e l'aggiungo anche al Player1
+                        if (Tavola.table2Player1[i, j].colpitaP2)
+                            Tavola.table1Player2[i, j].colpitaP2 = true;
+                    }
+
+                    #endregion
+                    
                 }
             }
             
             
         }
     }
-    
-    
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
@@ -69,6 +114,7 @@ public class Tavola : MonoBehaviour, IPunObservable
             stream.SendNext(table2Player1);
             stream.SendNext(table2Player2);
             stream.SendNext(table1Player1);
+            stream.SendNext(table1Player2);
         }
         else
         {

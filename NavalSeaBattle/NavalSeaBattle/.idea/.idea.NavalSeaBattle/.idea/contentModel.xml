@@ -350,6 +350,7 @@
           <e p="PlayerUI.cs" t="Include" />
           <e p="PosizionamentoUI.cs" t="Include" />
           <e p="Tavola.cs" t="Include" />
+          <e p="TextUI.cs" t="Include" />
         </e>
       </e>
       <e p="NavalSeaBattle.sln" t="IncludeFlat" />

@@ -184,7 +184,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7544326777030513069}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -259,7 +259,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNameText: {fileID: 8185989502174203863}
   playerNameText2: {fileID: 6452881224743594840}
-  playerHealthSlider: {fileID: 0}
+  player1Slider: {fileID: 0}
+  player2Slider: {fileID: 0}
+  turno: {fileID: 0}
+  numeroturno: {fileID: 0}
+  playerturno: {fileID: 0}
 --- !u!135 &8519657701154854956
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -282,6 +286,6 @@ CanvasGroup:
   m_GameObject: {fileID: 7544326777030513069}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
+  m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 1
