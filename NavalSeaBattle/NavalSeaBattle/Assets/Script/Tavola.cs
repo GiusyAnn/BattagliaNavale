@@ -46,7 +46,7 @@ public class Tavola : MonoBehaviour, IPunObservable
                         if (Tavola.table2Player2[i, j].p2affondaP1 !=
                             Tavola.table1Player1[i, j].p2affondaP1)
                         {
-                            //Controllo se il Player2 ha posizonato una nave e l'aggiungo anche al Player1
+                            //Controllo se il Player2 ha affondato una mia nave e aggiorno la mia tavola
                             if (Tavola.table2Player2[i, j].p2affondaP1)
                             {
                                 Tavola.table1Player1[i, j].p2affondaP1 = true;
@@ -58,7 +58,7 @@ public class Tavola : MonoBehaviour, IPunObservable
                         if (Tavola.table2Player2[i, j].colpitaP1 !=
                             Tavola.table1Player1[i, j].colpitaP1)
                         {
-                            //Controllo se il Player2 ha posizonato una nave e l'aggiungo anche al Player1
+                            //Controllo se il Player2 ha colpito una mia casella e aggiorno la mia tavola
                             if (Tavola.table2Player2[i, j].colpitaP1)
                                 Tavola.table1Player1[i, j].colpitaP1 = true;
                         }
@@ -81,7 +81,7 @@ public class Tavola : MonoBehaviour, IPunObservable
                     if (Tavola.table2Player1[i, j].p1affondaP2 !=
                         Tavola.table1Player2[i, j].p1affondaP2)
                     {
-                        //Controllo se il Player2 ha posizonato una nave e l'aggiungo anche al Player1
+                        //Controllo se il Player1 ha affondato una mia nave e aggiorno la mia tavola
                         if (Tavola.table2Player1[i, j].p1affondaP2)
                         {
                             Tavola.table1Player2[i, j].p1affondaP2 = true;
@@ -93,7 +93,7 @@ public class Tavola : MonoBehaviour, IPunObservable
                     if (Tavola.table2Player1[i, j].colpitaP2 !=
                         Tavola.table1Player2[i, j].colpitaP2)
                     {
-                        //Controllo se il Player2 ha posizonato una nave e l'aggiungo anche al Player1
+                        //Controllo se il Player1 ha colpito una mia casella e aggiorno la mia tavola
                         if (Tavola.table2Player1[i, j].colpitaP2)
                             Tavola.table1Player2[i, j].colpitaP2 = true;
                     }
