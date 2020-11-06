@@ -21,8 +21,6 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
         public Texture2D mirino;
         public Texture2D mouse;
         public Material nave;
-        public Material casella1;
-        public Material casella2;
         public Material colpita;
         public Material affondata;
 
@@ -207,6 +205,8 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
                         this.pv.RPC("p1affondanavedip2",RpcTarget.All,riga,colonna);
                         GameController.numeroTurnoPub = GameController.numeroTurnoPub + 1;
                         GameController.turnoPub = false;
+                        GameController.naviaffondate2 += 1;
+                        Debug.LogWarning("Player1 :  Navi P2 Affondate :"+GameController.naviaffondate2);
                     }
                     else
                     {
@@ -245,6 +245,8 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
                         this.pv.RPC("p2affondanavedip1",RpcTarget.All,riga,colonna);
                         GameController.numeroTurnoPub = GameController.numeroTurnoPub + 1;
                         GameController.turnoPub = true;
+                        GameController.nv1 = GameController.nv1 + 1;
+                        Debug.LogWarning("PLAYER2 : Ho affondato una nave nemica, Navi affondate = "+GameController.nv1);
                     }
                     else
                     {

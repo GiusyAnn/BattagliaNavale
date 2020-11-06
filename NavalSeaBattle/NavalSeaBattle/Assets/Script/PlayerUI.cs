@@ -17,15 +17,6 @@ public class PlayerUI : MonoBehaviour
     [SerializeField]
     private Text playerNameText2;
 
-
-    [Tooltip("UI Slider per la salute del Player1")]
-    [SerializeField]
-    private Slider player1Slider;
-    
-    [Tooltip("UI Slider per la salute del Player2")]
-    [SerializeField]
-    private Slider player2Slider;
-
     private PlayerManager target;
     private PlayerManagerP2 target2;
 
@@ -36,12 +27,6 @@ public class PlayerUI : MonoBehaviour
 
     void Update()
     {
-
-        // Referenza alla salute del Player
-        if (player1Slider != null)
-        {
-            //playerHealthSlider.value = target.Health;
-        }
 
     }
 
@@ -82,7 +67,6 @@ public class PlayerUI : MonoBehaviour
             playerNameText2.text = target2.photonView.Owner.NickName;
         }
     }
-
     #endregion
     
     

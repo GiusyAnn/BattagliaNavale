@@ -16,12 +16,14 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
         public  bool startP1 = false;
         public  bool startP2 = false;
         public static bool iniziogioco = false;
-        
+        public int n2=0;
+        public int n1=0;
         public  int numeroTurno = 1;
         public static int numeroTurnoPub = 1;
         public static bool turnoPub = true;
         public bool turno = true;
-        
+        public static int nv1 = 0;
+        public static int naviaffondate2 = 0;
         private PhotonView pv;
 
         #endregion
@@ -31,7 +33,6 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
     void Start()
     {
         pv = GetComponentInParent<PhotonView>();
-        Debug.LogWarning("Ho Creato il GameController la sua PhotonView é : " + pv);
         naviP1 = 0;
         naviP2 = 0;
         startP1 = false;
@@ -41,13 +42,14 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
         turnoPub = turno;
         numeroTurno = 1;
         numeroTurnoPub = numeroTurno;
+        nv1 = 0; 
+        naviaffondate2 = 0;
     }
 
     //Risetto i parametri iniziali nel caso il gioco venga riavviato
     public void Awake()
     {
         pv = GetComponentInParent<PhotonView>();
-        Debug.LogWarning("AWAKE! Ho Creato il GameController la sua PhotonView é : " + pv);
         naviP1 = 0;
         naviP2 = 0;
         startP1 = false;
@@ -57,6 +59,8 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
         turnoPub = turno;
         numeroTurno = 1;
         numeroTurnoPub = numeroTurno;
+        nv1 = 0; 
+        naviaffondate2 = 0;
     }
 
     #region PunRPC Metods
@@ -83,7 +87,6 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
     {
         this.turno = true;
         this.numeroTurno = this.numeroTurno + 1;
-        Debug.LogWarning("SONO NALLA PUN: il turno PUN è "+ turno+" "+numeroTurno);
     }
 
     //Setto il turno per il Player2
@@ -92,7 +95,20 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
     {
         this.turno = false;
         this.numeroTurno = this.numeroTurno + 1;
-        Debug.LogWarning("SONO NALLA PUN:il turno PUN è "+ turno+" "+numeroTurno);
+    }
+
+    [PunRPC]
+    public void SettaNavi1()
+    {
+        this.n1 = this.n1 + 1;
+        Debug.LogWarning("SONO NALLA PUN SETTO NAVI 1 :le navi sono "+ n1);
+    }
+
+    [PunRPC]
+    public void Navi2()
+    {
+        this.n2 = this.n2 + 1;
+        Debug.LogWarning("SONO NALLA PUN SETTO NAVI 2 :le navi sono "+ n2);
     }
     
     #endregion
@@ -144,6 +160,30 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
                 numeroTurnoPub = numeroTurno;
                 turnoPub = turno;
             }
+
+            if (n1 != nv1 || n2 != naviaffondate2)
+            {
+                //Controllo che il numero locale e il numero PUN di navi del Player1 sia uguale e nal caso lo modifico
+                if (n1 < nv1)
+                {
+                    pv.RPC("SettaNavi1", RpcTarget.All);
+                    nv1 = n1;
+                    Debug.LogWarning("SONO USCITA DALLA PUN SETTO NAVI 1 :le navi sono "+ n1 +" le PUB sono : "+nv1);
+                } else if (nv1 < n1)
+                {
+                    nv1 = n1;
+                }
+            
+                //Controllo che il numero locale e il numero PUN di navi del Player2 sia uguale e nal caso lo modifico
+                if (n2 < naviaffondate2)
+                {
+                    pv.RPC("Navi2", RpcTarget.All);
+                    naviaffondate2 = n2;
+                } else if (naviaffondate2 < n2)
+                {
+                    naviaffondate2 = n2;
+                }
+            }
         }
         else
         {
@@ -178,6 +218,30 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
                 numeroTurnoPub = numeroTurno;
                 turnoPub = turno;
             }
+            
+            if (n1 != nv1 || n2 != naviaffondate2)
+            {
+                //Controllo che il numero locale e il numero PUN di navi del Player1 sia uguale e nal caso lo modifico
+                if (n1 < nv1)
+                {
+                    pv.RPC("SettaNavi1", RpcTarget.All);
+                    nv1 = n1;
+                    Debug.LogWarning("SONO USCITA DALLA PUN SETTO NAVI 1 :le navi sono "+ n1 +" le PUB sono : "+nv1);
+                } else if (nv1 < n1)
+                {
+                    nv1 = n1;
+                }
+            
+                //Controllo che il numero locale e il numero PUN di navi del Player2 sia uguale e nal caso lo modifico
+                if (n2 < naviaffondate2)
+                {
+                    pv.RPC("Navi2", RpcTarget.All);
+                    naviaffondate2 = n2;
+                } else if (naviaffondate2 < n2)
+                {
+                    naviaffondate2 = n2;
+                }
+            }
         }
     }
 
@@ -186,20 +250,20 @@ public class GameController : MonoBehaviourPunCallbacks, IPunObservable
         if (stream.IsWriting)
         {
             // Possediamo questo giocatore: invia queste informazioni agli altri i nostri dati
-            stream.SendNext(naviP1);
-            stream.SendNext(naviP2);
             stream.SendNext(startP1);
             stream.SendNext(startP2);
             stream.SendNext(iniziogioco);
+            stream.SendNext(n1);
+            stream.SendNext(n2);
         }
         else
         {
             //Lettore di rete, ricevi dati
-            naviP1 = (int)stream.ReceiveNext();
-            naviP2 = (int)stream.ReceiveNext();
             startP1 = (bool)stream.ReceiveNext();
             startP2 = (bool)stream.ReceiveNext();
             iniziogioco = (bool)stream.ReceiveNext();
+            n1 = (int)stream.ReceiveNext();
+            n2 = (int)stream.ReceiveNext();
         }
     }
 

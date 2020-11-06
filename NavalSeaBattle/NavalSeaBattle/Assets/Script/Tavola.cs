@@ -124,7 +124,5 @@ public class Tavola : MonoBehaviour, IPunObservable
             Tavola.table1Player1 = (Casella[,])stream.ReceiveNext();
             Tavola.table2Player1 = (Casella[,])stream.ReceiveNext();
         }
-    } 
-    
-    
+    }
 }

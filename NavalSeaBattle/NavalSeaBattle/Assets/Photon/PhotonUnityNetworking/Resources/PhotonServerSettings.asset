@@ -49,6 +49,8 @@ MonoBehaviour:
   - p1ColpisceCasellaP2
   - p2affondanavedip1
   - p2ColpisceCasellaP1
+  - SettaNavi1
+  - Navi2
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

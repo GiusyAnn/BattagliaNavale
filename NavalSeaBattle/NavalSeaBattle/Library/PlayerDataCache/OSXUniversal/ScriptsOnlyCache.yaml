@@ -91,13 +91,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11238}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11240}
     - Class: 114
-      Script: {instanceID: 11402}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11422}
+      Script: {instanceID: 11404}
     - Class: 114
-      Script: {instanceID: 11462}
+      Script: {instanceID: 11424}
     - Class: 114
       Script: {instanceID: 11508}
     - Class: 114
@@ -190,13 +190,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11238}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11240}
     - Class: 114
-      Script: {instanceID: 11402}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11422}
+      Script: {instanceID: 11404}
     - Class: 114
-      Script: {instanceID: 11462}
+      Script: {instanceID: 11424}
     - Class: 114
       Script: {instanceID: 11508}
     - Class: 114
@@ -232,8 +232,6 @@ ScriptsOnlyBuild:
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -299,13 +297,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11238}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11240}
     - Class: 114
-      Script: {instanceID: 11402}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11422}
+      Script: {instanceID: 11404}
     - Class: 114
-      Script: {instanceID: 11462}
+      Script: {instanceID: 11424}
     - Class: 114
       Script: {instanceID: 11478}
     - Class: 114
@@ -348,8 +346,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
     - Class: 143
@@ -377,6 +373,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
@@ -545,12 +547,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: CullingHandler
-  - hash:
-      serializedVersion: 2
-      Hash: aeb62f729c52c814dec86c47dcac1471
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: 499fd23433e68e265d153aa6b95d0047
@@ -751,7 +747,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: cf31f656f2db04b51f9e816a141989fc
+      Hash: d3973e00c20b6addf7abda08fc1dc577
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerUI
@@ -805,7 +801,7 @@ ScriptsOnlyBuild:
     className: OnStartDelete
   - hash:
       serializedVersion: 2
-      Hash: a33d3635b64dc957b1ed7aba86f796d9
+      Hash: be2749985724c465213b2520f37aba83
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Casella
@@ -1471,7 +1467,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 737e77a942565ec03ba97f34d1931bb3
+      Hash: ef06ba91d058c5916cb82b139b43c7f2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -1585,7 +1581,7 @@ ScriptsOnlyBuild:
     className: PhotonView
   - hash:
       serializedVersion: 2
-      Hash: ca7e6dbd32e455e0c8cc830698da6b0a
+      Hash: 11c85630f62a4076b7a7e6b1a8d1c613
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TextUI

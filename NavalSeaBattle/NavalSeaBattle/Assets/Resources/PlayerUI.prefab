@@ -168,7 +168,6 @@ GameObject:
   - component: {fileID: 233589590222324471}
   - component: {fileID: 6524379183774163145}
   - component: {fileID: 2314242448965128240}
-  - component: {fileID: 8519657701154854956}
   - component: {fileID: 804758527464497432}
   m_Layer: 5
   m_Name: PlayerUI
@@ -261,22 +260,6 @@ MonoBehaviour:
   playerNameText2: {fileID: 6452881224743594840}
   player1Slider: {fileID: 0}
   player2Slider: {fileID: 0}
-  turno: {fileID: 0}
-  numeroturno: {fileID: 0}
-  playerturno: {fileID: 0}
---- !u!135 &8519657701154854956
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7544326777030513069}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!225 &804758527464497432
 CanvasGroup:
   m_ObjectHideFlags: 0

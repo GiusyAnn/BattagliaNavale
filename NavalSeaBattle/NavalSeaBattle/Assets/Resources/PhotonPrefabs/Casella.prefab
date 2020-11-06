@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5251ebda8063b4634b46921af0909898, type: 2}
+  - {fileID: 2100000, guid: b0806b369305e43d692dc93fec19d091, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,8 +121,6 @@ MonoBehaviour:
   mirino: {fileID: 2800000, guid: c3d98b3536e6d48c59637da36ae9c671, type: 3}
   mouse: {fileID: 2800000, guid: f04c7a2a2cc09436288afcea23294127, type: 3}
   nave: {fileID: 2100000, guid: 89213111c8e3f4c108771cb43f18ea8f, type: 2}
-  casella1: {fileID: 2100000, guid: 5251ebda8063b4634b46921af0909898, type: 2}
-  casella2: {fileID: 2100000, guid: e40c96688c53641769cf4fbaa29fe826, type: 2}
   colpita: {fileID: 2100000, guid: 449cd90694ade4a1ca7ea9c17720b8a9, type: 2}
   affondata: {fileID: 2100000, guid: 23717278c929a46bf80220bfaeded4b0, type: 2}
 --- !u!114 &-1827956080036926084

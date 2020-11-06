@@ -20,19 +20,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee925c64-3d72-4d77-933a-7b262e0e7254" name="Default Changelist" comment="Change file">
-      <change afterPath="$PROJECT_DIR$/Assets/Material/31p5J1p3LeL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/31p5J1p3LeL.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/58e8fd3deb97430e819064bd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/58e8fd3deb97430e819064bd.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/affondata.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/affondata.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/colpita.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/colpita.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/TextUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NavalSeaBattle.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Casella.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Casella.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Ambient_Occlusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Ambient_Occlusion.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Emissive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Emissive.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Height.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Height.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Roughness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/casella.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/casella.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/colpita.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/colpita.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/31p5J1p3LeL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/31p5J1p3LeL.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/CasellaMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/CasellaMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/CasellaMaterial2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/CasellaMaterial2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/GamePlaneMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/GamePlaneMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/GamePlaneMaterial2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/GamePlaneMaterial2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Immagine611-300x300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Immagine611-300x300.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/colpita.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/colpita.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/d4zoycv-28830d86-6f09-4a66-b411-880ae6a6e033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/d4zoycv-28830d86-6f09-4a66-b411-880ae6a6e033.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/Casella.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/Casella.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/CasellaP2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/CasellaP2.prefab" afterDir="false" />
@@ -40,32 +60,27 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room for 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room for 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Casella.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Casella.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PosizionamentoUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PosizionamentoUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Tavola.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Tavola.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/TextUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/TextUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/03/03ee3039ea91047238f30653f4355d58" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/08/082caffba8f5518bbf91d9c5761fab22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0f/0f295d6358ec8278f16755c2a1f55859" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1c/1c7e68d727a8a3c83945b40c4b663daa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/23/23e43f27097189c1e7ec3118f4b4dd48" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/27/27b3b27c836df885c5abd0ab9867d7dd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/31/31b9ca541e37173023d785f332e2423c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/34/34fa54d069e74e1e72eb6b7a18345c22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/60/60d5fcd0b5a17e94dfcf9a6ec4ab969b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/60/60e2121b30ca561d39baa617416c4dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/70/701435e063044593a34503cb5d9369ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/82/827db500eec1f3d29911266f904d68f7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/88/881f50465116db31ae05c5996db1b974" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a3/a3aa4e767e73cd200d982ccdb306e62e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b4/b41b3f273f8e9d9653ac304e50676117" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c20cb0d945db52dfa4de7d995285d5d7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cb/cb2b86265922f21d3e0de4f7098423cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e2/e208c808f7dc03cf392001ee8757f6fe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ee/eea75d4cd0e390436ec7e95ed6792ec5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fe/fe80b616d75e151ea2283eed2fae7705" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fe/fef347b5347fe491bf7f751d5f7bd085" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/05/05dae5f34a0a8305da557458e7897e11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/07/074d13368bf1d337c0c63d2f8956012d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2c/2c7135a1ac141ed58b28fefc42ea37bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4e/4eec706e77061d569ecc024629e76a85" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/55/55bf0ff3f91769ff1affb70ef1648551" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5f/5f08f72e2791dbc8f7c6ce70b1fc0d27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/82/820fa0621de958f273e5e9402c679a9e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/9477a430d0f5a533741ed565a050a07d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a1/a1da764fc601da85ba5894d5601350ab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b1/b179ff9f962407b8bfe5d73055588e76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c7/c7893d536c21a18f856967099cc35dae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c7/c7a619cdedf896985f59646812de7e65" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ce/cec986cbddb85bc2c4bf954c572b4f0c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cf/cf34d83afa2c6758406f81600eef6f67" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ec/ec8d1d4cf086d003ee09a4c012c546b9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f4/f45274f14e302d7dc12ab33275ca477a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fe/fe12b4d38d5775600f211abd4d200d34" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
@@ -75,11 +90,10 @@
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets0.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets.resS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets1.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets1.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets2.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets2.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/ScriptsOnlyCache.yaml" afterDir="false" />
@@ -87,7 +101,6 @@
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,8 +112,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/Unity Projects/NavalSeaBattleProva/Assets/Photon/PhotonUnityNetworking/Code/PhotonNetworkPart.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B8D77CC-2571-4B76-A1CC-3DA96520D733/dd/7011adc2/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity Projects/Esercitazione 25-05/Assets/gameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/TextUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/316D3DE4-D82D-488A-A340-FB145991509D/66/06e2aa1d/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Unity Projects/NavalSeaBattleProva/Assets/Script/Casella.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -108,15 +125,15 @@
         <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs" />
         <option value="$USER_HOME$/Unity Projects/NavalSeaBattleProva/Assets/Script/PosizionamentoUI.cs" />
         <option value="$USER_HOME$/Unity Projects/NavalSeaBattleProva/Assets/Script/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerManagerP2.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PosizionamentoUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/TextUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Tavola.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/TextUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" />
         <option value="$PROJECT_DIR$/Assets/Script/Casella.cs" />
       </list>
     </option>
@@ -131,6 +148,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3496708" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29992685" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -160,10 +179,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="43436">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="43436" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -203,6 +222,10 @@
       <workItem from="1604571665713" duration="21000" />
       <workItem from="1604571711141" duration="5503000" />
       <workItem from="1604581511925" duration="227000" />
+      <workItem from="1604581918703" duration="471000" />
+      <workItem from="1604685626016" duration="12000" />
+      <workItem from="1604685666882" duration="5099000" />
+      <workItem from="1604699858325" duration="3912000" />
     </task>
     <task id="LOCAL-00001" summary="Change">
       <created>1603446233615</created>
@@ -264,6 +287,70 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="442" y="282" key="#Notifications/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1603446167816" />
+    <state width="1398" height="331" key="GridCell.Tab.0.bottom" timestamp="1604704601992">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601992" />
+    <state width="1398" height="331" key="GridCell.Tab.0.center" timestamp="1604704601991">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601991" />
+    <state width="1398" height="331" key="GridCell.Tab.0.left" timestamp="1604704601983">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601983" />
+    <state width="1398" height="331" key="GridCell.Tab.0.right" timestamp="1604704601991">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601991" />
+    <state width="1398" height="331" key="GridCell.Tab.1.bottom" timestamp="1604704601994">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601994" />
+    <state width="1398" height="331" key="GridCell.Tab.1.center" timestamp="1604704601993">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601993" />
+    <state width="1398" height="331" key="GridCell.Tab.1.left" timestamp="1604704601992">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601992" />
+    <state width="1398" height="331" key="GridCell.Tab.1.right" timestamp="1604704601993">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601993" />
+    <state width="1398" height="331" key="GridCell.Tab.2.bottom" timestamp="1604704601996">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.2.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601996" />
+    <state width="1398" height="331" key="GridCell.Tab.2.center" timestamp="1604704601995">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.2.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601995" />
+    <state width="1398" height="331" key="GridCell.Tab.2.left" timestamp="1604704601994">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.2.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601994" />
+    <state width="1398" height="331" key="GridCell.Tab.2.right" timestamp="1604704601995">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.2.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601995" />
+    <state width="1398" height="331" key="GridCell.Tab.3.bottom" timestamp="1604704601998">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.3.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601998" />
+    <state width="1398" height="331" key="GridCell.Tab.3.center" timestamp="1604704601997">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.3.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601997" />
+    <state width="1398" height="331" key="GridCell.Tab.3.left" timestamp="1604704601996">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.3.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601996" />
+    <state width="1398" height="331" key="GridCell.Tab.3.right" timestamp="1604704601997">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.3.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704601997" />
     <state x="462" y="181" key="RiderGenerateDialog" timestamp="1603891179858">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -282,10 +369,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="504" y="192" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1603446223122" />
-    <state x="351" y="82" width="825" height="735" key="find.popup" timestamp="1604404670431">
+    <state x="262" y="194" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604701145573">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="351" y="82" width="825" height="735" key="find.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604404670431" />
+    <state x="262" y="194" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604701145573" />
+    <state x="351" y="82" width="825" height="735" key="find.popup" timestamp="1604704062533">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="351" y="82" width="825" height="735" key="find.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1604704062533" />
     <state x="383" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1604055998390">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

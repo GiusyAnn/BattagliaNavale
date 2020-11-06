@@ -13,6 +13,9 @@ public class TextUI : MonoBehaviour
         public Text playerturno;
         public Text startgame;
         float tm = 300;
+
+        public Slider sliderPlayer1;
+        public Slider sliderPlayer2;
         
     #endregion
     // Start is called before the first frame update
@@ -48,6 +51,9 @@ public class TextUI : MonoBehaviour
             {
                 playerturno.text = "è il turno dell'avversario";
             }
+
+            sliderPlayer1.value = GameController.nv1;
+            sliderPlayer2.value= GameController.naviaffondate2;
         }
         else
         {
@@ -65,20 +71,9 @@ public class TextUI : MonoBehaviour
             {
                 playerturno.text = "è il turno dell'avversario";
             }
+            
+            sliderPlayer1.value = GameController.nv1;
+            sliderPlayer2.value= GameController.naviaffondate2;
         }
     }
-/*
-    public void textiniziogioco()
-    {
-        startgame.GetComponent<Text>().enabled = true;
-        while (tm > 0)
-        {
-            tm -= Time.deltaTime;
-        }
-
-        if (tm < 0)
-        {
-            startgame.GetComponent<Text>().enabled = false;
-        }
-    }*/
 }
