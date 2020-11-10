@@ -22,6 +22,8 @@ ScriptsOnlyBuild:
     - PlayerUI
     - PosizionamentoUI
     - TextUI
+    - controllomenu
+    - endgame
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -91,13 +93,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11238}
     - Class: 114
-      Script: {instanceID: 11240}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11262}
+      Script: {instanceID: 11402}
     - Class: 114
-      Script: {instanceID: 11404}
+      Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 11424}
+      Script: {instanceID: 11462}
     - Class: 114
       Script: {instanceID: 11508}
     - Class: 114
@@ -109,19 +111,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12330}
     - Class: 114
-      Script: {instanceID: 12594}
+      Script: {instanceID: 12596}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 12912}
+      Script: {instanceID: 12914}
     - Class: 114
-      Script: {instanceID: 13048}
+      Script: {instanceID: 13052}
     - Class: 114
-      Script: {instanceID: 13324}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13400}
     - Class: 114
-      Script: {instanceID: 13484}
+      Script: {instanceID: 13488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -167,6 +169,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
@@ -190,13 +194,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11238}
     - Class: 114
-      Script: {instanceID: 11240}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11262}
+      Script: {instanceID: 11402}
     - Class: 114
-      Script: {instanceID: 11404}
+      Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 11424}
+      Script: {instanceID: 11462}
     - Class: 114
       Script: {instanceID: 11508}
     - Class: 114
@@ -212,23 +216,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12330}
     - Class: 114
-      Script: {instanceID: 12594}
+      Script: {instanceID: 12596}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 12912}
+      Script: {instanceID: 12914}
     - Class: 114
-      Script: {instanceID: 13048}
+      Script: {instanceID: 12952}
     - Class: 114
-      Script: {instanceID: 13216}
+      Script: {instanceID: 13052}
     - Class: 114
-      Script: {instanceID: 13324}
+      Script: {instanceID: 13220}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 13398}
+      Script: {instanceID: 13400}
     - Class: 114
-      Script: {instanceID: 13484}
+      Script: {instanceID: 13402}
+    - Class: 114
+      Script: {instanceID: 13488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -297,13 +303,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11238}
     - Class: 114
-      Script: {instanceID: 11240}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11262}
+      Script: {instanceID: 11402}
     - Class: 114
-      Script: {instanceID: 11404}
+      Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 11424}
+      Script: {instanceID: 11462}
     - Class: 114
       Script: {instanceID: 11478}
     - Class: 114
@@ -321,27 +327,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12330}
     - Class: 114
-      Script: {instanceID: 12518}
+      Script: {instanceID: 12490}
     - Class: 114
-      Script: {instanceID: 12594}
+      Script: {instanceID: 12520}
     - Class: 114
-      Script: {instanceID: 12694}
+      Script: {instanceID: 12596}
     - Class: 114
-      Script: {instanceID: 12892}
+      Script: {instanceID: 12696}
     - Class: 114
       Script: {instanceID: 12894}
     - Class: 114
-      Script: {instanceID: 12912}
+      Script: {instanceID: 12896}
     - Class: 114
       Script: {instanceID: 12914}
     - Class: 114
-      Script: {instanceID: 13048}
+      Script: {instanceID: 12916}
     - Class: 114
-      Script: {instanceID: 13324}
+      Script: {instanceID: 13052}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 13484}
+      Script: {instanceID: 13400}
+    - Class: 114
+      Script: {instanceID: 13488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -373,12 +381,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Slider
-  - hash:
-      serializedVersion: 2
-      Hash: aeb62f729c52c814dec86c47dcac1471
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
@@ -547,6 +549,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: CullingHandler
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 499fd23433e68e265d153aa6b95d0047
@@ -807,7 +815,7 @@ ScriptsOnlyBuild:
     className: Casella
   - hash:
       serializedVersion: 2
-      Hash: e517021a3fe0fc359ee085003342439f
+      Hash: 9dce9adfcc3d4a8dc158330f3e0465ed
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1101,6 +1109,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 5faffd0388948d3a79da7863917044f5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: controllomenu
+  - hash:
+      serializedVersion: 2
       Hash: d9aa52c5a283a9b8a790e55c0dee9ccf
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1339,6 +1353,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Pun.Demo.Asteroids
     className: Asteroid
+  - hash:
+      serializedVersion: 2
+      Hash: 1e7ed59461ccebaf51f800f58032e7ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: endgame
   - hash:
       serializedVersion: 2
       Hash: 7829e932aec962afd9bcfad28ffff27d
@@ -1740,4 +1760,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/Room for 1.unity
   - Assets/Scenes/Room for 2.unity
-  playerPath: /Users/giusya/Desktop/NavalSeaBattle.app
+  playerPath: /Users/giusya/Desktop/BattleShip.app

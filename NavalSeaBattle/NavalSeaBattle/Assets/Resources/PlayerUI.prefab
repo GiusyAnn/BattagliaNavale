@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.95402443, g: 0.9811321, b: 0.0786757, a: 1}
+  m_Color: {r: 0.8901961, g: 0.7882353, b: 0.44705883, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.95402443, g: 0.9811321, b: 0.0786757, a: 1}
+  m_Color: {r: 0.8901961, g: 0.7882353, b: 0.44705883, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -258,8 +258,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNameText: {fileID: 8185989502174203863}
   playerNameText2: {fileID: 6452881224743594840}
-  player1Slider: {fileID: 0}
-  player2Slider: {fileID: 0}
 --- !u!225 &804758527464497432
 CanvasGroup:
   m_ObjectHideFlags: 0
