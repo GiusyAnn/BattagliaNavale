@@ -195,7 +195,7 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
                 }
                 
                 //ProvaColpo
-                if ( this.table == 2 && GameController.iniziogioco && GameController.turnoPub)
+                if ( this.table == 2 && GameController.iniziogioco && GameController.turnoPub && this.colpitaP2 == false)
                 {
                     //controllo se nella casella dove sto colpendo l'avversario ha posizionato una nave
                     if (naveposizionataP2)
@@ -235,7 +235,7 @@ public class Casella : MonoBehaviourPunCallbacks, IPunObservable
                 }
                 
                 //ProvaColpo
-                if ( this.table == 2 && GameController.turnoPub == false && GameController.iniziogioco)
+                if ( this.table == 2 && GameController.turnoPub == false && GameController.iniziogioco && this.colpitaP1 == false)
                 {
                     //controllo se nella casella dove sto colpendo l'avversario ha posizionato una nave
                     if (naveposizionataP1)
