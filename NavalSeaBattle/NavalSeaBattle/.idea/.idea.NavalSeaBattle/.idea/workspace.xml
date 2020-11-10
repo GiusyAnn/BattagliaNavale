@@ -20,67 +20,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee925c64-3d72-4d77-933a-7b262e0e7254" name="Default Changelist" comment="Change file">
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Casella.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Casella.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Ambient_Occlusion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Ambient_Occlusion.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Emissive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Emissive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Height.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Height.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Roughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Roughness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/casella.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/casella.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/colpita.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/colpita.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/494-4943878_sinking-ship-campfire-hd-png-download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/494-4943878_sinking-ship-campfire-hd-png-download.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Plane.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Plane.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Base_Color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/Vol_36_5_Base_Color.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/casella 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/casella 1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/casella1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Textures/casella1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/loading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/loading.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/png-clipart-white-and-brown-sailing-ship-illustration-sea-of-thieves-deep-rock-galactic-xbox-one-electronic-entertainment-expo-2016-video-game-pirate-ship-miscellaneous-game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/png-clipart-white-and-brown-sailing-ship-illustration-sea-of-thieves-deep-rock-galactic-xbox-one-electronic-entertainment-expo-2016-video-game-pirate-ship-miscellaneous-game.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/title.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/controllomenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/controllomenu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/endgame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NavalSeaBattle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/31p5J1p3LeL.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/31p5J1p3LeL.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/CasellaMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/CasellaMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/CasellaMaterial2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/CasellaMaterial2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/45286929-nave-a-vela-isolato-su-sfondo-bianco-illustrazione-vettoriale-cartone-animato-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/45286929-nave-a-vela-isolato-su-sfondo-bianco-illustrazione-vettoriale-cartone-animato-.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/58e8fd3deb97430e819064bd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/58e8fd3deb97430e819064bd.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/946cd6224c8beb87f5ab8aa4cd7eb6c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/946cd6224c8beb87f5ab8aa4cd7eb6c3.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/GamePlaneMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/GamePlaneMaterial.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/GamePlaneMaterial2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/GamePlaneMaterial2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Immagine611-300x300.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Immagine611-300x300.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/colpita.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/colpita.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/d4zoycv-28830d86-6f09-4a66-b411-880ae6a6e033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/d4zoycv-28830d86-6f09-4a66-b411-880ae6a6e033.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/Casella.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/Casella.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/CasellaP2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/CasellaP2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PlayerUI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/NavePosizionata.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/NavePosizionata.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Textures/Casella.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Textures/Casella.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Textures/colpita.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Textures/colpita.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/affondata.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/affondata.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/PlanePlayer2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PhotonPrefabs/PlanePlayer2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room for 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room for 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room for 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room for 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Casella.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Casella.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Tavola.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Tavola.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/TextUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/TextUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/05/05dae5f34a0a8305da557458e7897e11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/07/074d13368bf1d337c0c63d2f8956012d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2c/2c7135a1ac141ed58b28fefc42ea37bf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4e/4eec706e77061d569ecc024629e76a85" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/55/55bf0ff3f91769ff1affb70ef1648551" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5f/5f08f72e2791dbc8f7c6ce70b1fc0d27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/82/820fa0621de958f273e5e9402c679a9e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/9477a430d0f5a533741ed565a050a07d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a1/a1da764fc601da85ba5894d5601350ab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b1/b179ff9f962407b8bfe5d73055588e76" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c7/c7893d536c21a18f856967099cc35dae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c7/c7a619cdedf896985f59646812de7e65" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ce/cec986cbddb85bc2c4bf954c572b4f0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cf/cf34d83afa2c6758406f81600eef6f67" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ec/ec8d1d4cf086d003ee09a4c012c546b9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f4/f45274f14e302d7dc12ab33275ca477a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fe/fe12b4d38d5775600f211abd4d200d34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0f/0fbb50db2ae2fbec046a193593313d2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/13/1375c80071d8ae363c89886e3a1e549d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1a/1a77612d2f84c694face0b46d6beb70d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/42/429f588cf31777003df30e9b033dd95a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5c/5c9e88004b071721815337cabd34a9f8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/63/63067c27882180ee57c81d52a9607042" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/98/984d7426bc6203fa93a71df8b19f6456" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a1/a16751f328857d17ec7ec5abe6042ef7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b5/b5d92b37f2716aecbe0a36e22d26ec62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/be/be368830113ba2a0d09dc040745b035c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c5/c515c4f817179bdb942d65021af32d3a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f0/f068cff2265622330a6c5350ae8f70e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f5/f5fa7b1ba46ab3e62185ffbe60107600" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f7/f751bae406c8044ce271028d216937c3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
@@ -89,14 +83,8 @@
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/Unity.Timeline.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/level2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/resources.assets.resS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets1.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets1.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets2.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/Data/sharedassets2.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/OSXUniversal/ScriptsOnlyCache.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
@@ -115,6 +103,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B8D77CC-2571-4B76-A1CC-3DA96520D733/dd/7011adc2/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/endgame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity Projects/Esercitazione 25-05/Assets/gameController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/316D3DE4-D82D-488A-A340-FB145991509D/66/06e2aa1d/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity Projects/NavalSeaBattleProva/Assets/Script/Casella.cs" root0="SKIP_HIGHLIGHTING" />
@@ -127,7 +116,6 @@
         <option value="$USER_HOME$/Unity Projects/NavalSeaBattleProva/Assets/Script/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerManagerP2.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PosizionamentoUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Tavola.cs" />
@@ -135,6 +123,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" />
         <option value="$PROJECT_DIR$/Assets/Script/Casella.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/endgame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/controllomenu.cs" />
       </list>
     </option>
   </component>
@@ -179,10 +170,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="43436">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="43436" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -226,6 +217,8 @@
       <workItem from="1604685626016" duration="12000" />
       <workItem from="1604685666882" duration="5099000" />
       <workItem from="1604699858325" duration="3912000" />
+      <workItem from="1604941076606" duration="1087000" />
+      <workItem from="1605015792598" duration="227000" />
     </task>
     <task id="LOCAL-00001" summary="Change">
       <created>1603446233615</created>

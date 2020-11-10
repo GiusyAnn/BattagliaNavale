@@ -259,6 +259,8 @@
      <Compile Include="Assets\Script\PosizionamentoUI.cs" />
      <Compile Include="Assets\Script\Tavola.cs" />
      <Compile Include="Assets\Script\TextUI.cs" />
+     <Compile Include="Assets\Script\controllomenu.cs" />
+     <Compile Include="Assets\Script\endgame.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/giusya/GitHub Project/BattagliaNavale/NavalSeaBattle/NavalSeaBattle/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

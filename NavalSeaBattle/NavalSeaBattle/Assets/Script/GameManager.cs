@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     GameObject playerPrefab;
 
     public  Canvas menu;
+    public Canvas endgame;
     
     #endregion
 
@@ -107,6 +108,12 @@ public class GameManager : MonoBehaviourPunCallbacks
             {
                 menu.GetComponent<Canvas>().enabled = false;
             }
+        }
+
+        if (GameController.nv1 == 10 || GameController.naviaffondate2 == 10)
+        {
+            GameController.iniziogioco = false;
+            endgame.GetComponent<Canvas>().enabled = true;
         }
     }
     
